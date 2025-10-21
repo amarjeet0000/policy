@@ -1,97 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App Policy - Sauda Online Shopping App</title>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; background: #f9f9f9; color: #333; }
-    h1, h2, h3 { color: #222; }
-    ul { margin: 0 0 20px 20px; }
-    p { margin-bottom: 15px; }
-    .section { border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 20px; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Sauda - Legal Documents</title>
+
+    <meta
+      name="description"
+      content="Official policies of Online Sauda - including Terms, Privacy, Refund, and Shipping Policies for users and sellers."
+    />
+    <meta name="author" content="Online Sauda" />
+    <link rel="icon" href="https://desibazaar0.netlify.app/favicon.ico" />
+
+    <style>
+        /* === GLOBAL === */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #f7f9fc 0%, #eef3f8 100%);
+            color: #333;
+        }
+
+        /* === CONTAINER === */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        /* === NAVIGATION BAR === */
+        .policy-nav {
+            background-color: #004aad;
+            padding: 12px 10px;
+            margin: -30px -30px 40px -30px;
+            border-radius: 16px 16px 0 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .policy-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 12px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .policy-nav a:hover {
+            background-color: #00aaff;
+            transform: translateY(-2px);
+        }
+
+        /* === HEADINGS === */
+        h2 {
+            font-size: 2.2em;
+            color: #004aad;
+            border-bottom: 3px solid #00aaff;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: #222;
+            margin-top: 35px;
+            border-left: 5px solid #ffc107;
+            padding-left: 15px;
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            color: #444;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 30px;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #111;
+        }
+
+        /* === BOXES & HIGHLIGHTS === */
+        .agreement-box {
+            border: 2px solid #e5e5e5;
+            padding: 25px;
+            margin: 30px 0;
+            background-color: #f8faff;
+            border-radius: 12px;
+        }
+
+        .contact-info {
+            padding: 18px;
+            background-color: #e9f5ff;
+            border-left: 5px solid #00aaff;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+
+        .contact-info strong {
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 50px 0;
+        }
+
+        /* === FOOTER === */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 25px 10px;
+            background-color: #004aad;
+            color: #fff;
+            font-size: 0.9em;
+            border-radius: 0 0 16px 16px;
+        }
+
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .container {
+                padding: 18px;
+                margin: 10px;
+            }
+            .policy-nav a {
+                display: block;
+                margin: 8px 0;
+                font-size: 0.95em;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+
+        /* === PRINT STYLES === */
+        @media print {
+            .policy-nav {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <nav class="policy-nav">
+            <a href="#terms">Terms & Conditions</a>
+            <a href="#seller-agreement">Seller Agreement</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#shipping">Shipping Policy</a>
+            <a href="#refund">Refund Policy</a>
+        </nav>
 
-  <h1>App Policy – Sauda Online Shopping App</h1>
-  <p><strong>Effective Date:</strong> 01 October 2025</p>
+        <!-- TERMS AND CONDITIONS -->
+        <section id="terms">
+            <h2>Online Sauda - Terms and Conditions (User/Customer)</h2>
+            <p><strong>Last Updated:</strong> 21 October 2025</p>
+            <p>
+                Welcome to Online Sauda. By using our platform, you acknowledge that you have read, understood, 
+                and agree to be bound by these Terms and Conditions. If you do not agree to these terms, you may not use our services.
+            </p>
 
-  <div class="section">
-    <h2>1. Privacy Policy</h2>
-    <p>At <strong>Sauda Online Shopping App</strong>, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use our services.</p>
-    <ul>
-      <li><strong>Information We Collect:</strong> We collect your Name, email address, phone number, delivery address, account information, payment details, and device & usage data to provide and improve our services.</li>
-      <li><strong>How We Use Information:</strong> Your data is used to manage your account, process orders, send transactional updates (like order confirmation and shipping notices), improve our app's functionality, and provide customer support.</li>
-      <li><strong>Third-Party Services:</strong> We share necessary information with trusted partners to process payments (Razorpay), manage infrastructure (Firebase), and analyze app usage (analytics tools). These partners are obligated to protect your data.</li>
-      <li><strong>Data Security:</strong> We implement strong technical and administrative security measures to protect your data. However, please be aware that no method of transmission over the internet is 100% secure.</li>
-      <li><strong>Your Rights:</strong> You have the right to access, update, or request deletion of your personal data by contacting our support team.</li>
-    </ul>
-  </div>
+            <h3>1. Introduction</h3>
+            <p>
+                Online Sauda is an e-commerce platform that connects users, sellers, farmers, and service
+                providers. Our services include online grocery, pharmacy, food delivery, shopping, farming
+                solutions, parcel delivery, and on-demand services.
+            </p>
+            
+            <h3>2. Acceptance of Terms</h3>
+            <p>
+                By accessing or using the Online Sauda platform, you acknowledge that you have read, understood, 
+                and agree to be bound by these Terms and Conditions. We reserve the right to modify these terms 
+                at any time, and continued use of our services constitutes acceptance of the modified terms.
+            </p>
 
-  <div class="section">
-    <h2>2. Terms of Service</h2>
-    <p>By downloading and using the Sauda Online Shopping App, you agree to be bound by these Terms of Service.</p>
-    <ul>
-        <li><strong>Eligibility:</strong> You must be at least 18 years of age to create an account and make purchases.</li>
-        <li><strong>User Conduct:</strong> You agree not to use the app for any unlawful purpose or to post any content that is offensive, harmful, or infringes on the rights of others.</li>
-        <li><strong>Intellectual Property:</strong> All content within the app, including logos, graphics, and text, is the property of Sauda Online Shopping App and is protected by copyright laws.</li>
-    </ul>
-  </div>
+            <h3>3. User Accounts</h3>
+            <ul>
+                <li>Users must create an account to access the services.</li>
+                <li>You are responsible for maintaining the confidentiality of your login credentials.</li>
+                <li>Providing false or misleading information is prohibited.</li>
+                <li>Users must be at least 18 years old to register.</li>
+                <li>You agree to provide accurate, current, and complete information during registration.</li>
+                <li>Online Sauda reserves the right to suspend or terminate accounts that violate these terms.</li>
+            </ul>
+            
+            <h3>4. Order Placement and Acceptance</h3>
+            <ul>
+                <li>All orders placed through Online Sauda are subject to product availability.</li>
+                <li>We reserve the right to refuse or cancel any order for any reason at our discretion.</li>
+                <li>Order confirmation does not signify our acceptance of your order; we may decline orders for reasons including pricing errors or suspected fraud.</li>
+                <li>Prices are subject to change without notice.</li>
+            </ul>
+            
+            <h3>5. Payment Terms</h3>
+            <ul>
+                <li>Online Sauda accepts various payment methods including credit/debit cards, digital wallets, and cash on delivery.</li>
+                <li>You agree to pay all charges incurred by your account, including applicable taxes.</li>
+                <li>In case of payment failure, we reserve the right to cancel your order.</li>
+                <li>For cash on delivery orders, you must pay the exact amount to the delivery executive.</li>
+            </ul>
+            
+            <h3>6. User Conduct</h3>
+            <ul>
+                <li>You agree not to use the platform for any unlawful purpose or in any way that could damage, disable, or impair the service.</li>
+                <li>You will not attempt to gain unauthorized access to any part of the platform or any systems connected to it.</li>
+                <li>You will not interfere with another user's enjoyment of the service.</li>
+                <li>You will not upload or transmit any viruses, malware, or other malicious code.</li>
+            </ul>
+            
+            <h3>7. Intellectual Property</h3>
+            <p>
+                All content on the Online Sauda platform, including text, graphics, logos, images, and software, 
+                is the property of Online Sauda or its content suppliers and is protected by copyright and other 
+                intellectual property laws. You may not reproduce, distribute, or create derivative works without 
+                our express written permission.
+            </p>
+            
+            <h3>8. Third-Party Links and Services</h3>
+            <p>
+                Our platform may contain links to third-party websites or services that are not owned or controlled 
+                by Online Sauda. We have no control over, and assume no responsibility for, the content, privacy 
+                policies, or practices of any third-party websites or services. You acknowledge and agree that 
+                Online Sauda shall not be responsible or liable for any damage or loss caused by your use of any 
+                such third-party services.
+            </p>
+            
+            <h3>9. Termination</h3>
+            <p>
+                We may terminate or suspend your account and access to our services immediately, without prior notice 
+                or liability, for any reason whatsoever, including without limitation if you breach the Terms and 
+                Conditions. Upon termination, your right to use the service will cease immediately.
+            </p>
 
-  <div class="section">
-    <h2>3. Delivery Policy</h2>
-    <ul>
-      <li>Orders are typically processed and prepared for shipment within 24–48 hours of confirmation.</li>
-      <li>Delivery time varies based on your location and product availability. We will provide an estimated delivery date at checkout.</li>
-      <li>You will receive tracking updates via the app or SMS once your order is out for delivery.</li>
-      <li>While we work with reliable courier partners, delays due to external factors (e.g., weather, public holidays, transport strikes) are not our responsibility.</li>
-      <li>Our delivery partner will attempt delivery at your address. If you are unavailable, a second attempt may be made. After multiple failed attempts, the order may be canceled and returned.</li>
-    </ul>
-  </div>
+            <h3>10. Liability Disclaimer</h3>
+            <p>
+                Online Sauda acts only as a technology and delivery facilitator. We do not guarantee product
+                quality, safety, or legality.
+            </p>
+            <ul>
+                <li>
+                    <strong>No Responsibility for:</strong> losses, delays, cancellations, or seller
+                    non-compliance.
+                </li>
+                <li><strong>Maximum Liability:</strong> limited to refunding the order value.</li>
+                <li>Online Sauda shall not be liable for any indirect, incidental, special, consequential, or punitive damages.</li>
+                <li>We do not guarantee uninterrupted, secure, or error-free service.</li>
+            </ul>
+            
+            <h3>11. Indemnification</h3>
+            <p>
+                You agree to indemnify and hold harmless Online Sauda and its affiliates, officers, directors, 
+                employees, and agents from any claims, damages, losses, liabilities, and expenses arising out of 
+                your use of the platform or violation of these Terms and Conditions.
+            </p>
+            
+            <h3>12. Force Majeure</h3>
+            <p>
+                Online Sauda shall not be liable for any failure or delay in performance due to circumstances 
+                beyond our reasonable control, including but not limited to acts of God, war, terrorism, 
+                government actions, natural disasters, or internet service disruptions.
+            </p>
+            
+            <h3>13. Severability</h3>
+            <p>
+                If any provision of these Terms and Conditions is found to be unenforceable or invalid, that 
+                provision shall be limited or eliminated to the minimum extent necessary so that these Terms 
+                shall otherwise remain in full force and effect.
+            </p>
+            
+            <h3>14. Changes to Terms</h3>
+            <p>
+                We reserve the right to modify or replace these Terms and Conditions at any time. If a revision 
+                is material, we will provide at least 30 days' notice prior to any new terms taking effect. 
+                What constitutes a material change will be determined at our sole discretion.
+            </p>
+            
+            <h3>15. Entire Agreement</h3>
+            <p>
+                These Terms and Conditions constitute the entire agreement between you and Online Sauda regarding 
+                your use of the platform and supersede all prior and contemporaneous agreements, proposals, or 
+                representations, whether written or oral.
+            </p>
+            
+            <h3>16. Waiver</h3>
+            <p>
+                No waiver of any term of these Terms and Conditions shall be deemed a further or continuing waiver 
+                of such term or any other term, and Online Sauda's failure to assert any right or provision under 
+                these Terms shall not constitute a waiver of such right or provision.
+            </p>
+            
+            <h3>17. Assignment</h3>
+            <p>
+                You may not assign or transfer these Terms and Conditions, by operation of law or otherwise, 
+                without Online Sauda's prior written consent. Any attempt by you to assign or transfer these 
+                Terms without such consent will be null and void. Online Sauda may freely assign or transfer 
+                these Terms without restriction.
+            </p>
+            
+            <h3>18. Notices</h3>
+            <p>
+                Any notices or other communications provided by Online Sauda under these Terms will be given 
+                by posting to the platform, sending to the email address associated with your account, or by 
+                any other method we determine appropriate.
+            </p>
+            
+            <h3>19. Relationship of Parties</h3>
+            <p>
+                Nothing in these Terms and Conditions shall be construed as creating a joint venture, partnership, 
+                employment, or agency relationship between you and Online Sauda.
+            </p>
 
-  <div class="section">
-    <h2>4. Cancellation, Return, and Refund Policy</h2>
-    <h3>Cancellation Policy</h3>
-    <ul>
-      <li>Orders can be canceled directly from the app or by contacting support **before** the item has been shipped.</li>
-      <li>Once an order is marked as "Shipped," it can no longer be canceled.</li>
-      <li>A confirmation of your cancellation will be sent via the app or WhatsApp.</li>
-    </ul>
-    <h3>Return Policy</h3>
-    <ul>
-      <li>We accept returns for defective, damaged, or incorrect products within **2 days** of the delivery date.</li>
-      <li>To initiate a return, please contact our support team with your order ID and images of the product issue.</li>
-      <li>Products must be returned in an unused condition, in their original packaging, and with all original tags and accessories intact.</li>
-      <li>**Non-Returnable Items:** For hygiene and safety reasons, certain items such as food products, personal care items, and undergarments cannot be returned.</li>
-    </ul>
-    <h3>Refund Policy</h3>
-    <ul>
-      <li>Refunds are issued for successfully canceled orders, approved returns, or orders that failed during payment.</li>
-      <li>Refunds will be processed to the original payment method within **6–7 business days**.</li>
-      <li>Please note that any transaction fees or payment gateway charges applied during the original purchase may not be refundable.</li>
-      <li>For returns, partial or full refunds are processed only after our team has received and inspected the returned product. The final refund amount will be based on the condition of the item.</li>
-    </ul>
-  </div>
+            <h3>20. Governing Law</h3>
+            <p>
+                This Agreement is governed by the laws of India. Any disputes shall be subject to the courts
+                of <strong>Bihar, India</strong>.
+            </p>
 
-  <div class="section">
-    <h2>5. User Account Responsibilities</h2>
-    <ul>
-        <li>You are responsible for maintaining the confidentiality of your account password and for all activities that occur under your account.</li>
-        <li>You must notify us immediately of any unauthorized use of your account or any other breach of security.</li>
-        <li>Sauda Online Shopping App reserves the right to terminate accounts, refuse service, or cancel orders at our discretion if we believe a user has violated these policies.</li>
-    </ul>
-  </div>
+            <div class="contact-info">
+                <h4>Contact Us (General Inquiries)</h4>
+                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7979952854</p>
+                <p><strong>Address:</strong> Gejan Road, Shakurabad, Jehanabad, Bihar 804425, India</p>
+            </div>
+        </section>
 
-  <div class="section">
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions about these policies, please do not hesitate to contact us:</p>
-    <p>
-      Email: <a href="mailto:amarjeet.akr1@gmail.com">amarjeet.akr1@gmail.com</a><br>
-      Phone: 7979952854<br>
-      Address: Ghejan Road, Shakurabad, Jehanabad, Bihar - 804425
-    </p>
-  </div>
+        <hr />
 
+        <!-- SELLER AGREEMENT -->
+        <section id="seller-agreement">
+            <h2>Online Sauda - Seller Agreement</h2>
+            <div class="agreement-box">
+                <p><strong>Effective Date:</strong> 21 October 2025</p>
+                <p>
+                    By accepting this agreement digitally, you acknowledge that Online Sauda is only a
+                    technology platform and marketplace facilitator, not a direct seller of products.
+                </p>
+            </div>
+            
+            <h3>1. Seller Eligibility</h3>
+            <ul>
+                <li>Sellers must be at least 18 years old and have the legal capacity to enter into contracts.</li>
+                <li>Sellers must possess all necessary licenses, permits, and registrations required to sell their products.</li>
+                <li>Sellers must maintain valid business registration, GST, FSSAI (if applicable), and other required certifications.</li>
+                <li>Sellers must have a valid Indian bank account for receiving payments.</li>
+            </ul>
+
+            <h3>2. Seller Responsibilities</h3>
+            <ul>
+                <li>Maintain all required business licenses (GST, FSSAI, etc.) and display them on your store page.</li>
+                <li>Ensure product quality, safety, and compliance with all applicable laws and regulations.</li>
+                <li>Accept orders within 5 minutes and prepare them promptly for pickup.</li>
+                <li>Handle customer complaints, returns, and replacements as per Online Sauda policies.</li>
+                <li>Provide accurate and complete product information, including clear images, detailed descriptions, and correct pricing.</li>
+                <li>Maintain adequate inventory levels to fulfill orders and update stock availability regularly.</li>
+                <li>Package products securely to prevent damage during transit and ensure proper labeling.</li>
+                <li>Adhere to all packaging and labeling requirements as per Indian laws.</li>
+            </ul>
+            
+            <h3>3. Product Listings and Content</h3>
+            <ul>
+                <li>Sellers are solely responsible for the accuracy and completeness of their product listings.</li>
+                <li>Product images must accurately represent the actual product and show all relevant details.</li>
+                <li>Prohibited items (illegal substances, counterfeit goods, weapons, etc.) may not be listed on the platform.</li>
+                <li>Online Sauda reserves the right to remove any listing that violates our policies without prior notice.</li>
+                <li>Sellers must categorize products correctly and provide all required product attributes.</li>
+            </ul>
+            
+            <h3>4. Order Fulfillment</h3>
+            <ul>
+                <li>Sellers must accept orders within 5 minutes of receiving them through the platform.</li>
+                <li>Orders must be prepared and ready for pickup within the specified timeframe for each category.</li>
+                <li>Sellers must notify Online Sauda immediately if they cannot fulfill an order due to stock issues or other reasons.</li>
+                <li>Repeated order cancellations or failure to fulfill orders may result in suspension or termination of seller account.</li>
+                <li>Sellers must maintain a cancellation rate below 5% to remain in good standing.</li>
+            </ul>
+
+            <h3>5. Payment Terms</h3>
+            <ul>
+                <li>
+                    Payouts will be transferred to your registered bank account <strong>weekly</strong> after deductions of
+                    platform fees, commissions, and any applicable taxes.
+                </li>
+                <li>Refunds due to seller faults will be deducted from future payouts.</li>
+                <li>Commission rates and fees are subject to change with 30 days' notice to sellers.</li>
+                <li>Sellers are responsible for all taxes associated with their sales and must file returns accordingly.</li>
+                <li>Payment disputes must be raised within 7 days of the payment date through the seller dashboard.</li>
+                <li>A detailed statement of all transactions, fees, and payouts will be available in the seller dashboard.</li>
+            </ul>
+            
+            <h3>6. Customer Service</h3>
+            <ul>
+                <li>Sellers must respond to customer inquiries and messages within 24 hours.</li>
+                <li>Sellers must handle returns, replacements, and refunds according to Online Sauda policies.</li>
+                <li>Sellers must maintain a minimum customer satisfaction rating of 4.0 stars as determined by Online Sauda.</li>
+                <li>Negative reviews and customer complaints should be addressed professionally and promptly.</li>
+            </ul>
+            
+            <h3>7. Intellectual Property</h3>
+            <p>
+                Sellers represent and warrant that they have all necessary rights to the content they upload 
+                to the platform, including product images and descriptions. Sellers grant Online Sauda a 
+                non-exclusive, worldwide, royalty-free license to use, display, and distribute their content 
+                on the platform for the duration of this agreement.
+            </p>
+            
+            <h3>8. Data Protection</h3>
+            <p>
+                Sellers agree to comply with all applicable data protection laws and regulations, including 
+                the Information Technology Act, 2000 and related rules. Sellers may only use customer 
+                information for order fulfillment and may not share, sell, or misuse this information. 
+                Sellers must implement reasonable security practices to protect customer data.
+            </p>
+            
+            <h3>9. Termination</h3>
+            <p>
+                Either party may terminate this agreement with 30 days' written notice. Online Sauda may 
+                suspend or terminate a seller's account immediately for violation of this agreement or our 
+                policies. Upon termination, sellers must remove all their content from the platform and 
+                settle any outstanding payments or obligations.
+            </p>
+            
+            <h3>10. Limitation of Liability</h3>
+            <p>
+                Online Sauda's liability to sellers is limited to the commission fees paid to Online Sauda 
+                in the 3 months preceding the claim. Online Sauda shall not be liable for any indirect, 
+                incidental, or consequential damages, including lost profits or business opportunities.
+            </p>
+            
+            <h3>11. Indemnification</h3>
+            <p>
+                Sellers agree to indemnify and hold harmless Online Sauda from any claims, damages, or losses 
+                arising from their products, content, or violation of this agreement, including any legal 
+                costs incurred by Online Sauda in defending such claims.
+            </p>
+            
+            <h3>12. Governing Law</h3>
+            <p>
+                This agreement is governed by the laws of India. Any disputes shall be subject to the exclusive 
+                jurisdiction of the courts in <strong>Bihar, India</strong>.
+            </p>
+
+            <div class="contact-info">
+                <h4>Seller Support</h4>
+                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7979952854</p>
+                <p><strong>Business Hours:</strong> 9:00 AM - 6:00 PM, Monday to Saturday</p>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- PRIVACY POLICY -->
+        <section id="privacy">
+            <h2>Online Sauda - Privacy Policy</h2>
+            <p><strong>Last Updated:</strong> 21 October 2025</p>
+
+            <h3>1. Company Information</h3>
+            <p>
+                Company refers to Online Sauda, <strong>Gejan Road, Shakurabad, Jehanabad, Bihar 804425,
+                India</strong>. Website: <a href="https://desibazaar0.netlify.app/">https://desibazaar0.netlify.app/</a>
+            </p>
+
+            <h3>2. Data Collected</h3>
+            <ul>
+                <li><strong>Personal Information:</strong> Email, name, phone number, address, date of birth (optional).</li>
+              
+                <li><strong>Payment Information:</strong> Processed securely by our payment partners; we don't store full card details.</li>
+                <li><strong>Transaction Data:</strong> Order history, purchase preferences, and cart contents.</li>
+                <li><strong>Communication Data:</strong> Records of interactions with our customer service team.</li>
+                <li><strong>Feedback Data:</strong> Reviews, ratings, survey responses, and product feedback.</li>
+            </ul>
+            
+            <h3>3. Data Usage</h3>
+            <p>
+                We use your data to provide and improve services, contact you for support, and manage your
+                account. We do not sell your personal information to third parties.
+            </p>
+            <ul>
+                <li>To process and fulfill your orders and deliver products.</li>
+                <li>To personalize your experience and provide relevant product recommendations.</li>
+                <li>To communicate with you about orders, products, services, and promotional offers.</li>
+                <li>To improve our platform, products, and services through analytics and research.</li>
+                <li>To prevent, detect, and investigate fraud, security breaches, and other prohibited activities.</li>
+                <li>To comply with legal obligations and respond to lawful requests from authorities.</li>
+                <li>To send service-related notifications and administrative messages.</li>
+            </ul>
+            
+            <h3>4. Data Sharing</h3>
+            <p>
+                We may share your information with:
+            </p>
+            <ul>
+                <li><strong>Service Providers:</strong> Payment processors, delivery partners, cloud hosting services, and analytics providers.</li>
+                <li><strong>Sellers:</strong> Necessary information to fulfill your orders (name, address, contact details).</li>
+                <li><strong>Legal Authorities:</strong> When required by law or to protect our rights, property, or safety.</li>
+                <li><strong>Business Transfers:</strong> In case of merger, acquisition, or sale of assets with confidentiality protections.</li>
+                <li><strong>Marketing Partners:</strong> Only with your explicit consent for specific promotional activities.</li>
+            </ul>
+            <p>
+                We require all third parties to respect the security of your personal data and to treat it 
+                in accordance with the law and our data protection standards.
+            </p>
+            
+            <h3>5. Cookies and Tracking Technologies</h3>
+            <p>
+                We use cookies and similar tracking technologies to track activity on our platform and 
+                hold certain information. Cookies are files with a small amount of data that help us 
+                provide a better user experience. You can instruct your browser to refuse all cookies 
+                or to indicate when a cookie is being sent, though this may affect some platform features.
+            </p>
+            
+            <h3>6. Data Retention</h3>
+            <p>
+                We will retain your personal data only for as long as is necessary for the purposes set out 
+                in this Privacy Policy, including to comply with our legal obligations, resolve disputes, 
+                and enforce our agreements. Typically, we retain data for 3 years after your last activity 
+                or as required by law.
+            </p>
+
+            <h3>7. Data Security</h3>
+            <p>
+                We implement appropriate technical and organizational security measures to protect your 
+                personal data against unauthorized access, alteration, disclosure, or destruction. 
+                These include encryption, access controls, secure networks, and regular security audits. 
+                However, no method of transmission over the Internet or electronic storage is 100% secure, 
+                and we cannot guarantee absolute security.
+            </p>
+            
+            <h3>8. Your Rights</h3>
+            <p>
+                You have the right to:
+            </p>
+            <ul>
+                <li><strong>Access:</strong> Request copies of your personal data that we hold.</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+                <li><strong>Deletion:</strong> Request deletion of your personal data under certain conditions.</li>
+                <li><strong>Objection:</strong> Object to our processing of your personal data.</li>
+                <li><strong>Restriction:</strong> Request restriction of processing your personal data.</li>
+                <li><strong>Portability:</strong> Request transfer of your data to another organization.</li>
+                <li><strong>Consent Withdrawal:</strong> Withdraw consent at any time where we rely on consent to process your data.</li>
+            </ul>
+            <p>
+                To exercise these rights, please contact us using the details provided below. We will 
+                respond to your request within 30 days as required by applicable law.
+            </p>
+
+            <h3>9. Children's Privacy</h3>
+            <p>
+                We do not knowingly collect data from individuals under <strong>13 years of age</strong>. 
+                If we become aware that we have collected personal data from a child under 13 without 
+                parental consent, we will take steps to remove that information from our servers. 
+                Parents or guardians may contact us to request deletion of such data if found.
+            </p>
+            
+            <h3>10. International Data Transfers</h3>
+            <p>
+                Your information may be transferred to and maintained on computers located outside of your 
+                state, province, country, or other governmental jurisdiction where the data protection laws 
+                may differ. By using our platform, you consent to such transfers. We will ensure appropriate 
+                safeguards are in place to protect your data during international transfers.
+            </p>
+            
+            <h3>11. Changes to This Privacy Policy</h3>
+            <p>
+                We may update our Privacy Policy from time to time. We will notify you of any changes by 
+                posting the new Privacy Policy on this page and updating the "Last Updated" date. For 
+                material changes, we will provide more prominent notice, such as email notification or 
+                in-platform alerts. You are advised to review this Privacy Policy periodically for any changes.
+            </p>
+            
+            <h3>12. Contact Us</h3>
+            <p>
+                If you have any questions about this Privacy Policy or wish to exercise your data protection rights, please contact us:
+            </p>
+
+            <div class="contact-info">
+                <h4>Privacy Concerns & Data Protection Officer</h4>
+                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7979952854</p>
+                <p><strong>Address:</strong> Gejan Road, Shakurabad, Jehanabad, Bihar 804425, India</p>
+                <p><strong>Response Time:</strong> We aim to respond to all privacy-related inquiries within 7 business days.</p>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- SHIPPING POLICY -->
+        <section id="shipping">
+            <h2>Online Sauda - Shipping Policy</h2>
+            <p><strong>Effective Date:</strong> 21 October 2025</p>
+
+            <h3>1. Delivery Timeframes</h3>
+            <ul>
+                <li><strong>Online Grocery:</strong> 2 – 12 hours (location-based, typically same-day delivery)</li>
+                <li><strong>Online Food:</strong> 30 – 90 minutes (distance-based, restaurant preparation time included)</li>
+                <li><strong>Pharmacy:</strong> 1 – 4 hours (based on prescription verification and availability)</li>
+                <li><strong>General Shopping:</strong> 1 – 3 business days (standard delivery)</li>
+                <li><strong>Express Delivery:</strong> Available for select products with additional charges</li>
+            </ul>
+            <p>
+                Delivery times are estimates and may vary due to factors beyond our control, including 
+                weather conditions, traffic, product availability, and seller preparation time. During 
+                peak seasons, festivals, or special promotions, delivery times may be longer. We will 
+                notify you of any significant delays and provide updated delivery estimates.
+            </p>
+
+            <h3>2. Shipping Charges</h3>
+            <ul>
+                <li>Free delivery for orders above <strong>₹499</strong> across most categories.</li>
+                <li>Standard delivery fee: ₹49 for orders below ₹499.</li>
+                <li>Express delivery may include additional charges ranging from ₹30 to ₹100 based on urgency.</li>
+                <li>Remote area surcharge may apply for locations outside our standard delivery zones.</li>
+                <li>Bulky item surcharge may apply for large or heavy products.</li>
+                <li>Shipping charges are clearly displayed during checkout before payment confirmation.</li>
+            </ul>
+            
+            <h3>3. Delivery Areas</h3>
+            <p>
+                We currently deliver to select cities and regions in Bihar and neighboring areas. 
+                To check if we deliver to your area, please enter your pin code during checkout or 
+                on our website. We are continuously expanding our delivery network to serve more locations.
+            </p>
+            
+            <h3>4. Order Tracking</h3>
+            <p>
+                Once your order is confirmed and shipped, you will receive a confirmation email/SMS with 
+                tracking information and estimated delivery time. You can also track your order in real-time 
+                through your Online Sauda account or via the tracking link provided.
+            </p>
+            
+            <h3>5. Delivery Instructions</h3>
+            <p>
+                You can provide specific delivery instructions during checkout, such as leaving the package 
+                with a neighbor, security guard, or in a secure location. While we try to accommodate these 
+                requests, we cannot guarantee compliance in all cases for security reasons. For perishable 
+                items, we recommend being available to receive the delivery personally.
+            </p>
+            
+            <h3>6. Failed Deliveries</h3>
+            <p>
+                If delivery attempts fail for the following reasons, additional charges may apply for 
+                redelivery:
+            </p>
+            <ul>
+                <li>Incorrect or incomplete address provided by customer</li>
+                <li>Recipient not available at the time of delivery</li>
+                <li>Insufficient access to the delivery location</li>
+                <li>Refusal to accept delivery without valid reason</li>
+                <li>Security restrictions preventing delivery</li>
+            </ul>
+            <p>
+                We typically attempt delivery twice. After three failed delivery attempts, the order will 
+                be returned to the seller and a refund will be processed minus any applicable restocking 
+                fees (typically 10-15% of order value).
+            </p>
+
+            <h3>7. Lost or Damaged Shipments</h3>
+            <p>
+                Report damaged products immediately upon receipt with photos. Claims will be investigated
+                promptly, typically within 24-48 hours.
+            </p>
+            <ul>
+                <li>Inspect your package upon delivery before signing the delivery receipt.</li>
+                <li>Refuse delivery if the package appears tampered with or significantly damaged.</li>
+                <li>Report any issues within 48 hours of delivery for non-perishable items.</li>
+                <li>Report issues within 2 hours for perishable items like food and groceries.</li>
+                <li>Provide clear photographs of damaged items and packaging from multiple angles.</li>
+                <li>We will arrange for replacement, partial refund, or full refund as appropriate.</li>
+                <li>For lost shipments, contact us if your order hasn't arrived within 24 hours of the estimated delivery time.</li>
+            </ul>
+            
+            <h3>8. Order Changes and Cancellations</h3>
+            <p>
+                You may modify or cancel your order within 15 minutes of placing it, provided the order 
+                hasn't been processed for shipping. Once an order is in the shipping process, changes 
+                cannot be guaranteed. For cancellations after the 15-minute window but before shipping, 
+                a cancellation fee of 5% may apply.
+            </p>
+            
+            <h3>9. International Shipping</h3>
+            <p>
+                Currently, we only ship within India. We do not offer international shipping services.
+            </p>
+            
+            <h3>10. Delivery During Special Circumstances</h3>
+            <p>
+                During festivals, extreme weather conditions, or local restrictions, delivery times may 
+                be extended. We will communicate any known delays through our platform, email, or SMS 
+                notifications. In case of government-imposed lockdowns or curfews, we will follow all 
+                applicable guidelines and may offer contactless delivery options.
+            </p>
+
+            <div class="contact-info">
+                <h4>Shipping Support</h4>
+                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7979952854</p>
+                <p><strong>Hours:</strong> 8:00 AM - 10:00 PM, 7 days a week</p>
+                <p><strong>Emergency Support:</strong> For urgent delivery issues, call during business hours for priority assistance.</p>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- REFUND POLICY -->
+        <section id="refund">
+            <h2>Online Sauda - Refund Policy</h2>
+            <p><strong>Effective Date:</strong> 21 October 2025</p>
+
+            <h3>1. Eligibility by Category</h3>
+            <ul>
+                <li><strong>Grocery:</strong> Report damaged, expired, or missing items within <strong>48 hours</strong> of delivery.</li>
+                <li><strong>Food:</strong> Report incorrect, spoiled, or quality issues within <strong>2 hours</strong> of delivery.</li>
+                <li><strong>Pharmacy:</strong> Non-prescription items may be returned within <strong>7 days</strong> if unopened and in original packaging.</li>
+                <li><strong>General Merchandise:</strong> Eligible for return within <strong>7 days</strong> of delivery if unused and in original condition.</li>
+                <li><strong>Electronics & Appliances:</strong> Manufacturer warranty applies; report defects within <strong>10 days</strong>.</li>
+                <li><strong>Farming Supplies:</strong> Eligible for return within <strong>15 days</strong> if unused and in original packaging.</li>
+            </ul>
+            <p>
+                The following items are generally not eligible for return unless defective or incorrect:
+            </p>
+            <ul>
+                <li>Perishable groceries (fruits, vegetables, dairy, meat)</li>
+                <li>Prepared food and meals</li>
+                <li>Personal care items (if opened or used)</li>
+                <li>Prescription medications (unless dispensing error)</li>
+                <li>Items marked as "non-returnable" or "final sale"</li>
+                <li>Customized or personalized products</li>
+                <li>Innerwear and hosiery for hygiene reasons</li>
+            </ul>
+
+            <h3>2. Return Condition</h3>
+            <p>
+                Non-perishable items must be returned in <strong>original, unused condition</strong> with all tags, labels, 
+                and packaging intact for a full refund.
+            </p>
+            <ul>
+                <li>Items must be unused, undamaged, and in original saleable condition.</li>
+                <li>All original accessories, manuals, warranty cards, and freebies must be included.</li>
+                <li>Return shipping is free for eligible returns initiated through proper channels.</li>
+                <li>We reserve the right to reject returns that don't meet these conditions or show signs of use.</li>
+                <li>For damaged or defective items, photographs must be provided as evidence.</li>
+            </ul>
+            
+            <h3>3. Return Process</h3>
+            <ul>
+                <li>Initiate return request through your Online Sauda account or contact customer service.</li>
+                <li>Provide reason for return and supporting evidence (photos/videos if applicable).</li>
+                <li>Once approved, we will schedule a pickup (typically within 24-48 hours) or provide return instructions.</li>
+                <li>After we receive and inspect the returned item (within 3-5 business days), we will process your refund.</li>
+                <li>You will receive email/SMS notifications at each stage of the return process.</li>
+            </ul>
+
+            <h3>4. Refund Process</h3>
+            <ul>
+                <li><strong>Online Payments:</strong> Refunds processed within <strong>7 business days</strong> of return approval.</li>
+                <li><strong>COD Refunds:</strong> Processed to bank accounts within <strong>10 – 15 business days</strong>.</li>
+                <li>Refunds will be issued to the original payment method used for purchase.</li>
+                <li>For cash on delivery orders, refunds will be processed to your registered bank account.</li>
+                <li>You will receive notification once your refund has been processed with transaction details.</li>
+                <li>Bank processing times may add 1-3 additional business days to the refund timeline.</li>
+            </ul>
+            
+            <h3>5. Partial Refunds</h3>
+            <p>
+                In certain circumstances, partial refunds may be granted:
+            </p>
+            <ul>
+                <li>If only part of your order is returned or unavailable</li>
+                <li>If returned items show minor signs of use or damage</li>
+                <li>If original packaging is missing, damaged, or incomplete</li>
+                <li>If freebies, accessories, or promotional items are not returned</li>
+                <li>If restocking fees apply (typically 10-15% for non-defective returns)</li>
+            </ul>
+            
+            <h3>6. Late or Missing Refunds</h3>
+            <p>
+                If you haven't received your refund within the specified timeframe:
+            </p>
+            <ul>
+                <li>Check your bank account or payment method again</li>
+                <li>Contact your credit card company as it may take some time to process</li>
+                <li>Contact your bank as there may be processing time before the refund posts</li>
+                <li>If you've done all of the above and still haven't received your refund, contact our support team</li>
+                <li>We will investigate and provide status updates within 2 business days</li>
+            </ul>
+            
+            <h3>7. Exchanges</h3>
+            <p>
+                We only replace items if they are defective, damaged, or incorrect. If you need to exchange 
+                an item for the same product, contact us within the eligible timeframe to arrange an exchange. 
+                Exchanges are subject to product availability. If the replacement product is unavailable, 
+                we will issue a refund instead.
+            </p>
+            
+            <h3>8. Seller Responsibility</h3>
+            <p>
+                For marketplace items, the seller is responsible for accepting returns according to this 
+                policy. Online Sauda will facilitate the return process between buyers and sellers and 
+                ensure compliance with our refund policy standards.
+            </p>
+            
+            <h3>9. Policy Changes</h3>
+            <p>
+                We reserve the right to modify this refund policy at any time. Changes will be effective 
+                immediately upon posting to the platform. For material changes that reduce your refund 
+                rights, we will provide 30 days' notice. Your continued use of our services constitutes 
+                acceptance of the modified policy.
+            </p>
+
+            <div class="contact-info">
+                <h4>Refund Support</h4>
+                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Phone:</strong> +91 7979952854</p>
+                <p><strong>Hours:</strong> 9:00 AM - 8:00 PM, Monday to Saturday</p>
+                <p><strong>Quick Resolution:</strong> Include your order number in all communications for faster processing.</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2025 Online Sauda | All Rights Reserved | 
+            <a href="https://desibazaar0.netlify.app/">https://desibazaar0.netlify.app/</a>
+        </footer>
+    </div>
 </body>
 </html>
