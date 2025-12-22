@@ -7,7 +7,7 @@
 
     <meta
         name="description"
-        content="Official policies of Quick Sauda - including Terms, Privacy, Refund, and Shipping Policies for users and sellers."
+        content="Official policies of Quick Sauda - including Terms, Privacy, Refund, Shipping, Rider, and Driver Policies."
     />
     <meta name="author" content="Quick Sauda" />
     <link rel="icon" href="https://desibazaar0.netlify.app/favicon.ico" />
@@ -229,7 +229,9 @@
                 <option value="hi">हिन्दी</option>
             </select>
             <div class="policy-links">
-                <a href="#terms" data-key="nav_terms">Terms & Conditions</a>
+                <a href="#terms" data-key="nav_terms">Terms</a>
+                <a href="#rider-policy" data-key="nav_rider">Rider Policy</a>
+                <a href="#driver-policy" data-key="nav_driver">Driver Agreement</a>
                 <a href="#seller-agreement" data-key="nav_seller">Seller Agreement</a>
                 <a href="#privacy" data-key="nav_privacy">Privacy Policy</a>
                 <a href="#shipping" data-key="nav_shipping">Shipping Policy</a>
@@ -411,6 +413,59 @@
 
         <hr />
 
+        <section id="rider-policy">
+            <h2 data-key="rider_title">Quick Sauda - Rider Policy & Safety</h2>
+            <p data-key="rider_intro">This policy governs ride-hailing services with a primary focus on user safety and conduct.</p>
+            
+            <h3 data-key="rider_h3_booking">1. Booking and Identity</h3>
+            <ul>
+                <li data-key="li_rider_book_1">Users must provide accurate pickup and drop locations.</li>
+                <li data-key="li_rider_safety_1"><strong>Safety Check:</strong> Always verify the vehicle plate number and driver photo on your app before boarding.</li>
+                <li data-key="li_rider_book_3">Wait time charges may apply if the rider is not present at the pickup point within 5 minutes.</li>
+            </ul>
+
+            <h3 data-key="rider_h3_sos">2. Emergency & SOS Features</h3>
+            <ul>
+                <li data-key="li_rider_sos_1">The in-app SOS button notifies local authorities and our safety response team immediately.</li>
+                <li data-key="li_rider_sos_2">Riders should use the 'Share Live Trip' feature to allow friends or family to track their ride.</li>
+            </ul>
+
+            <h3 data-key="rider_h3_conduct">3. Rider Conduct</h3>
+            <ul>
+                <li data-key="li_rider_cond_1">Riders must treat Driver Partners with respect.</li>
+                <li data-key="li_rider_cond_3">Smoking, drinking, or any illegal activity inside the vehicle is strictly prohibited.</li>
+            </ul>
+        </section>
+
+        <hr />
+
+        <section id="driver-policy">
+            <h2 data-key="driver_title">Quick Sauda - Driver Partner Safety Agreement</h2>
+            <div class="agreement-box">
+                <p data-key="driver_intro_box">By registering, you agree to act as an independent service provider committed to maintaining the highest safety standards.</p>
+            </div>
+
+            <h3 data-key="driver_h3_requirements">1. Eligibility & Documentation</h3>
+            <ul>
+                <li data-key="li_driver_req_1">Drivers must hold a valid commercial Driving License and all required vehicle permits (RC, Insurance, PUC).</li>
+                <li data-key="li_driver_req_2">All partners must pass a mandatory background and criminal record verification.</li>
+                <li data-key="li_driver_req_3">The vehicle must be maintained in safe, clean, and roadworthy condition.</li>
+            </ul>
+
+            <h3 data-key="driver_h3_otp">2. Mandatory Ride Verification (OTP)</h3>
+            <ul>
+                <li data-key="li_driver_otp_msg"><strong>Ride Security:</strong> No ride should start without entering the correct OTP provided by the rider. This ensures passenger verification.</li>
+            </ul>
+
+            <h3 data-key="driver_h3_safety_ops">3. Operational Safety</h3>
+            <ul>
+                <li data-key="li_driver_ops_1">Drivers must follow all traffic laws. Over-speeding or reckless driving will lead to immediate deactivation.</li>
+                <li data-key="li_driver_ops_2">Rude behavior or harassment of any kind will result in a permanent ban from the platform.</li>
+            </ul>
+        </section>
+
+        <hr />
+
         <section id="seller-agreement">
             <h2 data-key="seller_title">Quick Sauda - Seller Agreement</h2>
             <div class="agreement-box">
@@ -461,7 +516,7 @@
 
             <h3 data-key="seller_h3_payment">5. Payment Terms</h3>
             <ul>
-                <li data-key="li_seller_pay_1">Payouts will be transferred to your registered bank account <strong>weekly</strong> after deductions of platform fees, commissions, and any applicable taxes.</li>
+                <li data-key="li_seller_pay_1">Payouts will be transferred to your registered bank account weekly after deductions of platform fees, commissions, and any applicable taxes.</li>
                 <li data-key="li_seller_pay_2">Refunds due to seller faults will be deducted from future payouts.</li>
                 <li data-key="li_seller_pay_3">Commission rates and fees are subject to change with 30 days' notice to sellers.</li>
                 <li data-key="li_seller_pay_4">Sellers are responsible for all taxes associated with their sales and must file returns accordingly.</li>
@@ -903,9 +958,10 @@
     <script>
         const translations = {
             en: {
-                // UPDATED: All "Click Basket" to "Quick Sauda"
                 platform_name: "Quick Sauda Policies",
                 nav_terms: "Terms & Conditions",
+                nav_rider: "Rider Policy",
+                nav_driver: "Driver Agreement",
                 nav_seller: "Seller Agreement",
                 nav_privacy: "Privacy Policy",
                 nav_shipping: "Shipping Policy",
@@ -979,6 +1035,36 @@
                 h3_governing_law: "20. Governing Law",
                 governing_law_text: "This Agreement is governed by the laws of India. Any disputes shall be subject to the courts of Bihar, India.",
                 contact_general: "Contact Us (General Inquiries)",
+
+                // Rider
+                rider_title: "Quick Sauda - Rider Policy & Safety",
+                rider_intro: "This policy governs ride-hailing services with a primary focus on user safety and conduct.",
+                rider_h3_booking: "1. Booking and Identity",
+                li_rider_book_1: "Users must provide accurate pickup and drop locations.",
+                li_rider_safety_1: "<strong>Safety Check:</strong> Always verify the vehicle plate number and driver photo on your app before boarding.",
+                li_rider_book_3: "Wait time charges may apply if the rider is not present at the pickup point within 5 minutes.",
+                rider_h3_sos: "2. Emergency & SOS Features",
+                li_rider_sos_1: "The in-app SOS button notifies local authorities and our safety response team immediately.",
+                li_rider_sos_2: "Riders should use the 'Share Live Trip' feature to allow friends or family to track their ride.",
+                rider_h3_conduct: "3. Rider Conduct",
+                li_rider_cond_1: "Riders must treat Driver Partners with respect.",
+                li_rider_cond_3: "Smoking, drinking, or any illegal activity inside the vehicle is strictly prohibited.",
+
+                // Driver
+                driver_title: "Quick Sauda - Driver Partner Safety Agreement",
+                driver_intro_box: "By registering, you agree to act as an independent service provider committed to maintaining the highest safety standards.",
+                driver_h3_requirements: "1. Eligibility & Documentation",
+                li_driver_req_1: "Drivers must hold a valid commercial Driving License and all required vehicle permits (RC, Insurance, PUC).",
+                li_driver_req_2: "All partners must pass a mandatory background and criminal record verification.",
+                li_driver_req_3: "The vehicle must be maintained in safe, clean, and roadworthy condition.",
+                driver_h3_otp: "2. Mandatory Ride Verification (OTP)",
+                li_driver_otp_msg: "<strong>Ride Security:</strong> No ride should start without entering the correct OTP provided by the rider. This ensures passenger verification.",
+                driver_h3_safety_ops: "3. Operational Safety",
+                li_driver_ops_1: "Drivers must follow all traffic laws. Over-speeding or reckless driving will lead to immediate deactivation.",
+                li_driver_ops_2: "Rude behavior or harassment of any kind will result in a permanent ban from the platform.",
+                driver_h3_payouts: "4. Earnings & Commission",
+                li_driver_pay_1: "Payouts are settled weekly based on completed trips.",
+                li_driver_pay_2: "Quick Sauda deducts a platform commission fee from the total fare.",
 
                 // Seller
                 seller_title: "Quick Sauda - Seller Agreement",
@@ -1176,7 +1262,7 @@
                 li_refund_refund_4: "For cash on delivery orders, refunds will be processed to your registered bank account.",
                 li_refund_refund_5: "You will receive notification once your refund has been processed with transaction details.",
                 li_refund_refund_6: "Bank processing times may add 1-3 additional business days to the refund timeline.",
-                refund_h3_partial: "5. Partial Refunds",
+                refund_h3_partial: "5. After three failed delivery attempts, the order will be returned and a refund minus a 15% restocking fee will be processed.",
                 refund_partial_p1: "In certain circumstances, partial refunds may be granted:",
                 li_refund_partial_1: "If only part of your order is returned or unavailable",
                 li_refund_partial_2: "If returned items show minor signs of use or damage",
@@ -1204,6 +1290,8 @@
                 // UPDATED: All "Click Basket" to "Quick Sauda" (क्विक सौदा)
                 platform_name: "क्विक सौदा नीतियां",
                 nav_terms: "नियम और शर्तें",
+                nav_rider: "राइडर नीति",
+                nav_driver: "ड्राइवर समझौता",
                 nav_seller: "विक्रेता समझौता",
                 nav_privacy: "गोपनीयता नीति",
                 nav_shipping: "शिपिंग नीति",
@@ -1257,7 +1345,7 @@
                 li_liability_3: "क्विक सौदा किसी भी अप्रत्यक्ष, आकस्मिक, विशेष, परिणामी या दंडात्मक क्षति के लिए उत्तरदायी नहीं होगा।",
                 li_liability_4: "हम अबाधित, सुरक्षित या त्रुटि रहित सेवा की गारंटी नहीं देते हैं।",
                 h3_indemnification: "11. क्षतिपूर्ति",
-                indemnification_para: "आप प्लेटफॉर्म के अपने उपयोग या इन नियमों और शर्तों के उल्लंघन से उत्पन्न होने वाले किसी भी दावे, क्षति, नुकसान, देनदारियों और खर्चों से क्विक सौदा और उसके सहयोगियों, अधिकारियों, निदेशकों, कर्मचारियों और एजेंटों को क्षतिपूर्ति करने और हानिरहित रखने के लिए सहमत हैं।",
+                indemnification_para: "आप प्लेटफॉर्म के अपने उपयोग या इन नियमों और शर्तों के उल्लंघन से उत्पन्न होने वाले किसी भी दावे, क्षति, नुकसान, देनदारियों and खर्चों से क्विक सौदा और उसके सहयोगियों, अधिकारियों, निदेशकों, कर्मचारियों और एजेंटों को क्षतिपूर्ति करने और हानिरहित रखने के लिए सहमत हैं।",
                 h3_force_majeure: "12. अप्रत्याशित घटना (Force Majeure)",
                 force_majeure_para: "क्विक सौदा हमारे उचित नियंत्रण से परे परिस्थितियों के कारण प्रदर्शन में किसी भी विफलता या देरी के लिए उत्तरदायी नहीं होगा, जिसमें भगवान के कार्य, युद्ध, आतंकवाद, सरकारी कार्रवाई, प्राकृतिक आपदाएं, या इंटरनेट सेवा रुकावटें शामिल हैं, लेकिन इन्हीं तक सीमित नहीं है।",
                 h3_severability: "13. पृथक्करणीयता",
@@ -1278,6 +1366,28 @@
                 governing_law_text: "यह समझौता भारत के कानूनों द्वारा नियंत्रित है। कोई भी विवाद केवल बिहार, भारत के न्यायालयों के अधीन होगा।",
                 contact_general: "हमसे संपर्क करें (सामान्य पूछताछ)",
 
+                // Rider (Hindi)
+                rider_title: "क्विक सौदा - राइडर नीति और सुरक्षा",
+                rider_intro: "यह नीति यात्री सुरक्षा पर ध्यान केंद्रित करते हुए राइड-हेलिंग सेवाओं के उपयोग को नियंत्रित करती है।",
+                rider_h3_booking: "1. राइड बुकिंग और सुरक्षा प्रोटोकॉल",
+                li_rider_safe_protocol: "सुरक्षा प्रोटोकॉल: सवारियों को बैठने से पहले ऐप पर वाहन नंबर और ड्राइवर के फोटो का मिलान करना अनिवार्य है।",
+                rider_h3_sos: "2. आपातकालीन और SOS",
+                li_rider_sos_1: "इन-ऐप SOS बटन सीधे स्थानीय अधिकारियों और हमारी सुरक्षा टीम से जुड़ा है।",
+                li_rider_sos_2: "सवारियों को अपनी लाइव लोकेशन परिवार के साथ साझा करने के लिए 'शेयर राइड' सुविधा का उपयोग करना चाहिए।",
+                rider_h3_conduct: "3. राइडर आचरण",
+                li_rider_cond_3: "वाहन के अंदर धूम्रपान, शराब या अवैध गतिविधियां सख्त वर्जित हैं।",
+
+                // Driver (Hindi)
+                driver_title: "क्विक सौदा - ड्राइवर पार्टनर सुरक्षा समझौता",
+                driver_intro_box: "ड्राइवर पार्टनर के रूप में पंजीकरण करके, आप यात्री सुरक्षा को प्राथमिकता देने के लिए सहमत होते हैं।",
+                driver_h3_requirements: "1. पात्रता और सुरक्षा दस्तावेज",
+                li_driver_req_1: "ड्राइवरों के पास वैध लाइसेंस और वाहन परमिट (RC, बीमा, PUC) होना चाहिए।",
+                li_driver_req_2: "पार्टनर्स का अनिवार्य बैकग्राउंड और आपराधिक रिकॉर्ड सत्यापन (Verification) किया जाता है।",
+                driver_h3_otp: "2. राइड सत्यापन (OTP)",
+                li_driver_otp_msg: "अनिवार्य OTP: सुरक्षा सुनिश्चित करने के लिए ड्राइवर को राइडर द्वारा दिए गए सही OTP को दर्ज करना होगा, तभी राइड शुरू होगी।",
+                driver_h3_payouts: "3. कमाई और कमीशन",
+                li_driver_pay_1: "भुगतान साप्ताहिक आधार पर किया जाता है।",
+
                 // Seller
                 seller_title: "क्विक सौदा - विक्रेता समझौता",
                 seller_intro_para: "इस समझौते को डिजिटल रूप से स्वीकार करके, आप स्वीकार करते हैं कि क्विक सौदा केवल एक प्रौद्योगिकी मंच और बाज़ार सुविधाकर्ता है, न कि उत्पादों का सीधा विक्रेता है।",
@@ -1294,7 +1404,7 @@
                 li_seller_resp_5: "स्पष्ट छवियों, विस्तृत विवरण और सही मूल्य निर्धारण सहित सटीक और पूर्ण उत्पाद जानकारी प्रदान करें।",
                 li_seller_resp_6: "ऑर्डर पूरा करने के लिए पर्याप्त इन्वेंट्री स्तर बनाए रखें और स्टॉक उपलब्धता को नियमित रूप से अपडेट करें।",
                 li_seller_resp_7: "परिवहन के दौरान क्षति को रोकने और उचित लेबलिंग सुनिश्चित करने के लिए उत्पादों को सुरक्षित रूप से पैक करें।",
-                li_seller_resp_8: "भारतीय कानूनों के अनुसार सभी पैकेजिंग और लेबलिंग आवश्यकताओं का पालन करें।",
+                li_seller_resp_8: "Adhere to all packaging and labeling requirements as per Indian laws.",
                 seller_h3_listings: "3. उत्पाद लिस्टिंग और सामग्री",
                 li_seller_list_1: "विक्रेता अपने उत्पाद लिस्टिंग की सटीकता और पूर्णता के लिए पूरी तरह से जिम्मेदार हैं।",
                 li_seller_list_2: "उत्पाद छवियों को वास्तविक उत्पाद का सटीक रूप से प्रतिनिधित्व करना चाहिए और सभी प्रासंगिक विवरण दिखाने चाहिए।",
@@ -1305,26 +1415,26 @@
                 li_seller_full_1: "विक्रेताओं को प्लेटफॉर्म के माध्यम से प्राप्त होने के 5 मिनट के भीतर ऑर्डर स्वीकार करने होंगे।",
                 li_seller_full_2: "ऑर्डर प्रत्येक श्रेणी के लिए निर्दिष्ट समय-सीमा के भीतर पिकअप के लिए तैयार होने चाहिए।",
                 li_seller_full_3: "विक्रेताओं को क्विक सौदा तुरंत सूचित करना होगा यदि वे स्टॉक समस्याओं या अन्य कारणों से ऑर्डर पूरा करने में असमर्थ हैं।",
-                li_seller_full_4: "बार-बार ऑर्डर रद्द करने या ऑर्डर पूरा करने में विफलता के परिणामस्वरूप विक्रेता खाते का निलंबन या समाप्ति हो सकती है।",
+                li_seller_full_4: "Repeated order cancellations or failure to fulfill orders may result in suspension or termination of seller account.",
                 li_seller_full_5: "विक्रेताओं को अच्छी स्थिति में रहने के लिए रद्दीकरण दर 5% से नीचे बनाए रखनी होगी।",
                 seller_h3_payment: "5. भुगतान शर्तें",
-                li_seller_pay_1: "प्लेटफॉर्म शुल्क, कमीशन और किसी भी लागू करों की कटौती के बाद भुगतान आपके पंजीकृत बैंक खाते में साप्ताहिक रूप से स्थानांतरित किए जाएंगे।",
-                li_seller_pay_2: "विक्रेता की गलती के कारण हुई वापसी भविष्य के भुगतानों से काट ली जाएगी।",
-                li_seller_pay_3: "कमीशन दरें और शुल्क विक्रेताओं को 30 दिनों की सूचना के साथ परिवर्तन के अधीन हैं।",
-                li_seller_pay_4: "विक्रेता अपनी बिक्री से जुड़े सभी करों के लिए जिम्मेदार हैं और तदनुसार रिटर्न फाइल करना होगा।",
-                li_seller_pay_5: "भुगतान विवादों को भुगतान की तारीख के 7 दिनों के भीतर विक्रेता डैशबोर्ड के माध्यम से उठाया जाना चाहिए।",
-                li_seller_pay_6: "सभी लेनदेन, शुल्क और भुगतानों का एक विस्तृत विवरण विक्रेता डैशबोर्ड में उपलब्ध होगा।",
+                li_seller_pay_1: "Payouts will be transferred to your registered bank account weekly after deductions of platform fees, commissions, and any applicable taxes.",
+                li_seller_pay_2: "Refunds due to seller faults will be deducted from future payouts.",
+                li_seller_pay_3: "Commission rates and fees are subject to change with 30 days' notice to sellers.",
+                li_seller_pay_4: "Sellers are responsible for all taxes associated with their sales and must file returns accordingly.",
+                li_seller_pay_5: "Payment disputes must be raised within 7 days of the payment date through the seller dashboard.",
+                li_seller_pay_6: "A detailed statement of all transactions, fees, and payouts will be available in the seller dashboard.",
                 seller_h3_support: "6. ग्राहक सेवा",
                 li_seller_cust_1: "विक्रेताओं को 24 घंटे के भीतर ग्राहक पूछताछ और संदेशों का जवाब देना होगा।",
                 li_seller_cust_2: "विक्रेताओं को क्विक सौदा नीतियों के अनुसार रिटर्न, प्रतिस्थापन और वापसी को संभालना होगा।",
                 li_seller_cust_3: "विक्रेताओं को क्विक सौदा द्वारा निर्धारित न्यूनतम 4.0 स्टार ग्राहक संतुष्टि रेटिंग बनाए रखनी होगी।",
                 li_seller_cust_4: "नकारात्मक समीक्षाओं और ग्राहक शिकायतों को पेशेवर रूप से और तुरंत संबोधित किया जाना चाहिए।",
                 seller_h3_ip: "7. बौद्धिक संपदा",
-                seller_ip_para: "विक्रेता प्रतिनिधित्व करते हैं और वारंट करते हैं कि उनके पास प्लेटफॉर्म पर अपलोड की गई सामग्री के सभी आवश्यक अधिकार हैं, जिसमें उत्पाद चित्र और विवरण शामिल हैं। विक्रेता इस समझौते की अवधि के लिए प्लेटफॉर्म पर अपनी सामग्री का उपयोग, प्रदर्शन और वितरण करने के लिए क्विक सौदा को एक गैर-अनन्य, विश्वव्यापी, रॉयल्टी-मुक्त लाइसेंस प्रदान करते हैं।",
+                seller_ip_para: "Sellers represent and warrant that they have all necessary rights to the content they upload to the platform, including product images and descriptions. Sellers grant Quick Sauda a non-exclusive, worldwide, royalty-free license to use, display, and distribute their content on the platform for the duration of this agreement.",
                 seller_h3_data: "8. डेटा संरक्षण",
-                seller_data_para: "विक्रेता सूचना प्रौद्योगिकी अधिनियम, 2000 और संबंधित नियमों सहित सभी लागू डेटा संरक्षण कानूनों और विनियमों का पालन करने के लिए सहमत हैं। विक्रेता ग्राहक जानकारी का उपयोग केवल ऑर्डर पूर्ति के लिए कर सकते हैं और इस जानकारी को साझा, बेच या दुरुपयोग नहीं कर सकते हैं। विक्रेताओं को ग्राहक डेटा की सुरक्षा के लिए उचित सुरक्षा प्रथाओं को लागू करना होगा।",
+                seller_data_para: "Sellers agree to comply with all applicable data protection laws and regulations, including the Information Technology Act, 2000 and related rules. Sellers may only use customer information for order fulfillment and may not share, sell, or misuse this information. Sellers must implement reasonable security practices to protect customer data.",
                 seller_h3_termination: "9. समाप्ति",
-                seller_termination_para: "कोई भी पक्ष 30 दिनों की लिखित सूचना के साथ इस समझौते को समाप्त कर सकता है। क्विक सौदा इस समझौते या हमारी नीतियों के उल्लंघन के लिए विक्रेता के खाते को तुरंत निलंबित या समाप्त कर सकता है। समाप्ति पर, विक्रेताओं को प्लेटफॉर्म से अपनी सभी सामग्री हटानी होगी और किसी भी बकाया भुगतान या दायित्वों का निपटान करना होगा।",
+                seller_termination_para: "Either party may terminate this agreement with 30 days' written notice. Quick Sauda may suspend or terminate a seller's account immediately for violation of this agreement or our policies. Upon termination, sellers must remove all their content from the platform and settle any outstanding payments or obligations.",
                 seller_h3_liability: "10. देयता की सीमा",
                 seller_liability_para: "विक्रेताओं के लिए क्विक सौदा की देयता दावे से पहले के 3 महीनों में क्विक सौदा को भुगतान किए गए कमीशन शुल्क तक सीमित है। क्विक सौदा किसी भी अप्रत्यक्ष, आकस्मिक, या परिणामी क्षति के लिए उत्तरदायी नहीं होगा, जिसमें खोया हुआ लाभ या व्यावसायिक अवसर शामिल हैं।",
                 seller_h3_indemnification: "11. क्षतिपूर्ति",
@@ -1346,20 +1456,20 @@
                 li_privacy_collect_5: "प्रतिक्रिया डेटा: समीक्षाएँ, रेटिंग, सर्वेक्षण प्रतिक्रियाएँ और उत्पाद प्रतिक्रिया।",
                 privacy_h3_data_usage: "3. डेटा का उपयोग",
                 privacy_usage_p1: "हम सेवाओं को प्रदान करने और बेहतर बनाने, समर्थन के लिए आपसे संपर्क करने और आपके खाते को प्रबंधित करने के लिए आपके डेटा का उपयोग करते हैं। हम आपकी व्यक्तिगत जानकारी को तीसरे पक्ष को नहीं बेचते हैं।",
-                li_privacy_use_1: "आपके ऑर्डर को संसाधित करने और पूरा करने और उत्पादों को वितरित करने के लिए।",
-                li_privacy_use_2: "आपके अनुभव को व्यक्तिगत बनाने और प्रासंगिक उत्पाद सिफारिशें प्रदान करने के लिए।",
-                li_privacy_use_3: "ऑर्डर, उत्पादों, सेवाओं और प्रचार ऑफ़र के बारे में आपसे संवाद करने के लिए।",
-                li_privacy_use_4: "एनालिटिक्स और अनुसंधान के माध्यम से हमारे प्लेटफॉर्म, उत्पादों और सेवाओं को बेहतर बनाने के लिए।",
-                li_privacy_use_5: "धोखाधड़ी, सुरक्षा उल्लंघनों और अन्य निषिद्ध गतिविधियों को रोकने, पता लगाने और जांच करने के लिए।",
-                li_privacy_use_6: "कानूनी दायित्वों का पालन करने और अधिकारियों से वैध अनुरोधों का जवाब देने के लिए।",
-                li_privacy_use_7: "सेवा-संबंधित सूचनाएं और प्रशासनिक संदेश भेजने के लिए।",
+                li_privacy_use_1: "To process and fulfill your orders and deliver products.",
+                li_privacy_use_2: "To personalize your experience and provide relevant product recommendations.",
+                li_privacy_use_3: "To communicate with you about orders, products, services, and promotional offers.",
+                li_privacy_use_4: "To improve our platform, products, and services through analytics and research.",
+                li_privacy_use_5: "To prevent, detect, and investigate fraud, security breaches, and other prohibited activities.",
+                li_privacy_use_6: "To comply with legal obligations and respond to lawful requests from authorities.",
+                li_privacy_use_7: "To send service-related notifications and administrative messages.",
                 privacy_h3_data_sharing: "4. डेटा साझाकरण",
                 privacy_sharing_p1: "हम आपकी जानकारी साझा कर सकते हैं:",
-                li_privacy_share_1: "सेवा प्रदाता: भुगतान प्रोसेसर, डिलीवरी पार्टनर, क्लाउड होस्टिंग सेवाएं और एनालिटिक्स प्रदाता।",
-                li_privacy_share_2: "विक्रेता: आपके ऑर्डर को पूरा करने के लिए आवश्यक जानकारी (नाम, पता, संपर्क विवरण)।",
-                li_privacy_share_3: "कानूनी अधिकारी: जब कानून द्वारा आवश्यक हो या हमारे अधिकारों, संपत्ति या सुरक्षा की रक्षा के लिए।",
-                li_privacy_share_4: "व्यावसायिक स्थानांतरण: गोपनीयता सुरक्षा के साथ विलय, अधिग्रहण या संपत्ति की बिक्री के मामले में।",
-                li_privacy_share_5: "विपणन भागीदार: विशिष्ट प्रचार गतिविधियों के लिए केवल आपकी स्पष्ट सहमति से।",
+                li_privacy_share_1: "Service Providers: Payment processors, delivery partners, cloud hosting services, and analytics providers.",
+                li_privacy_share_2: "Sellers: Necessary information to fulfill your orders (name, address, contact details).",
+                li_privacy_share_3: "Legal Authorities: When required by law or to protect our rights, property, or safety.",
+                li_privacy_share_4: "Business Transfers: In case of merger, acquisition, or sale of assets with confidentiality protections.",
+                li_privacy_share_5: "Marketing Partners: Only with your explicit consent for specific promotional activities.",
                 privacy_sharing_p2: "हम सभी तीसरे पक्षों को आपके व्यक्तिगत डेटा की सुरक्षा का सम्मान करने और कानून और हमारे डेटा संरक्षण मानकों के अनुसार इसका इलाज करने की आवश्यकता है।",
                 privacy_h3_cookies: "5. कुकीज़ और ट्रैकिंग टेक्नोलॉजी",
                 privacy_cookies_para: "हम हमारे प्लेटफॉर्म पर गतिविधि को ट्रैक करने और कुछ जानकारी रखने के लिए कुकीज़ और इसी तरह की ट्रैकिंग तकनीकों का उपयोग करते हैं। कुकीज़ थोड़ी मात्रा में डेटा वाली फाइलें हैं जो हमें एक बेहतर उपयोगकर्ता अनुभव प्रदान करने में मदद करती हैं। आप अपने ब्राउज़र को सभी कुकीज़ को अस्वीकार करने या कुकी भेजे जाने पर इंगित करने के लिए निर्देश दे सकते हैं, हालांकि यह कुछ प्लेटफॉर्म सुविधाओं को प्रभावित कर सकता है।",
@@ -1369,14 +1479,14 @@
                 privacy_security_para: "हम अनधिकृत पहुंच, परिवर्तन, प्रकटीकरण या विनाश से आपके व्यक्तिगत डेटा की रक्षा के लिए उपयुक्त तकनीकी और संगठनात्मक सुरक्षा उपायों को लागू करते हैं। इनमें एन्क्रिप्शन, एक्सेस नियंत्रण, सुरक्षित नेटवर्क और नियमित सुरक्षा ऑडिट शामिल हैं। हालांकि, इंटरनेट पर ट्रांसमिशन या इलेक्ट्रॉनिक स्टोरेज की कोई भी विधि 100% सुरक्षित नहीं है, और हम पूर्ण सुरक्षा की गारंटी नहीं दे सकते हैं।",
                 privacy_h3_rights: "8. आपके अधिकार",
                 privacy_rights_p1: "आपके पास अधिकार है:",
-                li_privacy_rights_1: "पहुँच: हमारे पास मौजूद आपके व्यक्तिगत डेटा की प्रतियां अनुरोध करें।",
-                li_privacy_rights_2: "सुधार: गलत या अधूरी डेटा के सुधार का अनुरोध करें।",
-                li_privacy_rights_3: "हटाना: कुछ शर्तों के तहत आपके व्यक्तिगत डेटा को हटाने का अनुरोध करें।",
-                li_privacy_rights_4: "आपत्ति: आपके व्यक्तिगत डेटा के हमारे प्रसंस्करण पर आपत्ति करें।",
-                li_privacy_rights_5: "प्रतिबंध: आपके व्यक्तिगत डेटा के प्रसंस्करण के प्रतिबंध का अनुरोध करें।",
-                li_privacy_rights_6: "पोर्टेबिलिटी: आपके डेटा को किसी अन्य संगठन में स्थानांतरित करने का अनुरोध करें।",
-                li_privacy_rights_7: "सहमति वापस लेना: किसी भी समय सहमति वापस लें जहां हम आपके डेटा को संसाधित करने के लिए सहमति पर भरोसा करते हैं।",
-                privacy_rights_p2: "इन अधिकारों का प्रयोग करने के लिए, कृपया नीचे दिए गए विवरण का उपयोग करके हमसे संपर्क करें। हम लागू कानून द्वारा आवश्यक के रूप में 30 दिनों के भीतर आपके अनुरोध का जवाब देंगे।",
+                li_privacy_rights_1: "Access: Request copies of your personal data that we hold.",
+                li_privacy_rights_2: "Correction: Request correction of inaccurate or incomplete data.",
+                li_privacy_rights_3: "Deletion: Request deletion of your personal data under certain conditions.",
+                li_privacy_rights_4: "Objection: Object to our processing of your personal data.",
+                li_privacy_rights_5: "Restriction: Request restriction of processing your personal data.",
+                li_privacy_rights_6: "Portability: Request transfer of your data to another organization.",
+                li_privacy_rights_7: "Consent Withdrawal: Withdraw consent at any time where we rely on consent to process your data.",
+                privacy_rights_p2: "In teeno rights ka upyog karne ke liye humse sampark karein.",
                 privacy_h3_children: "9. बच्चों की गोपनीयता",
                 privacy_children_para_1: "हम जानबूझकर 13 वर्ष से कम आयु के व्यक्तियों से डेटा एकत्र नहीं करते हैं। यदि हमें माता-पिता की सहमति के बिना 13 वर्ष से कम उम्र के बच्चे से व्यक्तिगत डेटा एकत्र करने के बारे में पता चलता है, तो हम उस जानकारी को हमारे सर्वर से हटाने के लिए कदम उठाएंगे। माता-पिता या अभिभावक पाए जाने पर ऐसे डेटा को हटाने का अनुरोध करने के लिए हमसे संपर्क कर सकते हैं।",
                 privacy_h3_international: "10. अंतर्राष्ट्रीय डेटा ट्रांसफर",
@@ -1391,33 +1501,33 @@
                 // Shipping
                 shipping_title: "क्विक सौदा - शिपिंग नीति",
                 shipping_h3_timeframe: "1. डिलीवरी समय-सीमा",
-                li_ship_time_1: "ऑनलाइन किराना: 2 – 12 घंटे (स्थान-आधारित, आमतौर पर उसी दिन डिलीवरी)",
-                li_ship_time_2: "ऑनलाइन खाद्य: 30 – 90 मिनट (दूरी-आधारित, रेस्तरां की तैयारी का समय शामिल)",
-                li_ship_time_3: "फार्मेसी: 1 – 4 घंटे (पर्चे के सत्यापन और उपलब्धता के आधार पर)",
-                li_ship_time_4: "सामान्य खरीदारी: 1 – 3 व्यावसायिक दिन (मानक डिलीवरी)",
-                li_ship_time_5: "एक्सप्रेस डिलीवरी: अतिरिक्त शुल्क के साथ चुनिंदा उत्पादों के लिए उपलब्ध",
+                li_ship_time_1: "Online Grocery: 2 – 12 hours (location-based, typically same-day delivery)",
+                li_ship_time_2: "Online Food: 30 – 90 minutes (distance-based, restaurant preparation time included)",
+                li_ship_time_3: "Pharmacy: 1 – 4 hours (based on prescription verification and availability)",
+                li_ship_time_4: "General Shopping: 1 – 3 business days (standard delivery)",
+                li_ship_time_5: "Express Delivery: Available for select products with additional charges",
                 shipping_timeframe_p1: "डिलीवरी का समय अनुमानित है और मौसम की स्थिति, यातायात, उत्पाद की उपलब्धता और विक्रेता की तैयारी के समय सहित हमारे नियंत्रण से परे कारकों के कारण भिन्न हो सकता है। व्यस्त मौसम, त्योहारों या विशेष प्रचारों के दौरान, डिलीवरी का समय लंबा हो सकता है। हम आपको किसी भी महत्वपूर्ण देरी के बारे में सूचित करेंगे और अद्यतन डिलीवरी अनुमान प्रदान करेंगे।",
                 shipping_h3_charges: "2. शिपिंग शुल्क",
-                li_ship_charge_1: "अधिकांश श्रेणियों में ₹499 से अधिक के ऑर्डर के लिए मुफ्त डिलीवरी।",
-                li_ship_charge_2: "मानक डिलीवरी शुल्क: ₹499 से कम के ऑर्डर के लिए ₹49।",
-                li_ship_charge_3: "एक्सप्रेस डिलीवरी में तात्कालिकता के आधार पर ₹30 से ₹100 तक के अतिरिक्त शुल्क शामिल हो सकते हैं।",
-                li_ship_charge_4: "हमारे मानक डिलीवरी क्षेत्रों के बाहर के स्थानों के लिए दूरस्थ क्षेत्र अधिभार लागू हो सकता है।",
-                li_ship_charge_5: "बड़े या भारी उत्पादों के लिए भारी आइटम अधिभार लागू हो सकता है।",
-                li_ship_charge_6: "भुगतान की पुष्टि से पहले चेकआउट के दौरान शिपिंग शुल्क स्पष्ट रूप से प्रदर्शित होते हैं।",
+                li_ship_charge_1: "Free delivery for orders above ₹499 across most categories.",
+                li_ship_charge_2: "Standard delivery fee: ₹49 for orders below ₹499.",
+                li_ship_charge_3: "Express delivery may include additional charges ranging from ₹30 to ₹100 based on urgency.",
+                li_ship_charge_4: "Remote area surcharge may apply for locations outside our standard delivery zones.",
+                li_ship_charge_5: "Bulky item surcharge may apply for large or heavy products.",
+                li_ship_charge_6: "Shipping charges are clearly displayed during checkout before payment confirmation.",
                 shipping_h3_areas: "3. डिलीवरी क्षेत्र",
                 shipping_areas_p1: "हम वर्तमान में बिहार और पड़ोसी क्षेत्रों के चुनिंदा शहरों और क्षेत्रों में डिलीवरी करते हैं। यह जांचने के लिए कि क्या हम आपके क्षेत्र में डिलीवरी करते हैं, कृपया चेकआउट के दौरान या हमारी वेबसाइट पर अपना पिन कोड दर्ज करें। हम अधिक स्थानों की सेवा के लिए लगातार अपने डिलीवरी नेटवर्क का विस्तार कर रहे हैं।",
                 shipping_h3_tracking: "4. ऑर्डर ट्रैकिंग",
-                shipping_tracking_p1: "एक बार आपका ऑर्डर कंफर्म और भेज दिए जाने के बाद, आपको ट्रैकिंग जानकारी और अनुमानित डिलीवरी समय के साथ एक पुष्टि ईमेल/एसएमएस प्राप्त होगा। आप अपने क्विक सौदा खाते के माध्यम से या प्रदान किए गए ट्रैकिंग लिंक के माध्यम से भी अपने ऑर्डर को वास्तविक समय में ट्रैक कर सकते हैं।",
+                shipping_tracking_p1: "Once your order is confirmed and shipped, you will receive a confirmation email/SMS with tracking information and estimated delivery time. You can also track your order in real-time through your Quick Sauda account or via the tracking link provided.",
                 shipping_h3_instructions: "5. डिलीवरी निर्देश",
                 shipping_instructions_p1: "आप चेकआउट के दौरान विशिष्ट डिलीवरी निर्देश प्रदान कर सकते हैं, जैसे पैकेज को पड़ोसी, सुरक्षा गार्ड के पास या सुरक्षित स्थान पर छोड़ना। जबकि हम इन अनुरोधों को समायोजित करने का प्रयास करते हैं, हम सुरक्षा कारणों से सभी मामलों में अनुपालन की गारंटी नहीं दे सकते हैं। खराब होने वाली वस्तुओं के लिए, हम व्यक्तिगत रूप से डिलीवरी प्राप्त करने के लिए उपलब्ध रहने की सलाह देते हैं।",
                 shipping_h3_failed: "6. विफल डिलीवरी",
                 shipping_failed_p1: "यदि निम्नलिखित कारणों से डिलीवरी के प्रयास विफल हो जाते हैं, तो पुनर्वितरण के लिए अतिरिक्त शुल्क लागू हो सकते हैं:",
-                li_ship_fail_1: "ग्राहक द्वारा प्रदान किया गया गलत या अधूरा पता",
-                li_ship_fail_2: "डिलीवरी के समय प्राप्तकर्ता अनुपलब्ध",
-                li_ship_fail_3: "डिलीवरी स्थान तक अपर्याप्त पहुंच",
-                li_ship_fail_4: "वैध कारण के बिना डिलीवरी स्वीकार करने से इनकार",
-                li_ship_fail_5: "सुरक्षा प्रतिबंधों के कारण डिलीवरी में बाधा",
-                shipping_failed_p2: "हम आमतौर पर दो बार डिलीवरी का प्रयास करते हैं। तीन विफल डिलीवरी प्रयासों के बाद, ऑर्डर विक्रेता को वापस कर दिया जाएगा और किसी भी लागू रीस्टॉकिंग शुल्क (आमतौर पर ऑर्डर मूल्य का 10-15%) को घटाकर धनवापसी संसाधित की जाएगी।",
+                li_ship_fail_1: "Incorrect or incomplete address provided by customer",
+                li_ship_fail_2: "Recipient not available at the time of delivery",
+                li_ship_fail_3: "Insufficient access to the delivery location",
+                li_ship_fail_4: "Refusal to accept delivery without valid reason",
+                li_ship_fail_5: "Security restrictions preventing delivery",
+                shipping_failed_p2: "We typically attempt delivery twice. After three failed delivery attempts, the order will be returned to the seller and a refund will be processed minus any applicable restocking fees (typically 10-15% of order value).",
                 shipping_h3_damaged: "7. गुम या क्षतिग्रस्त शिपमेंट",
                 shipping_damaged_p1: "तस्वीरों के साथ प्राप्त होने पर क्षतिग्रस्त उत्पादों की तुरंत रिपोर्ट करें। दावों की तुरंत जांच की जाएगी, आमतौर पर 24-48 घंटों के भीतर।",
                 li_ship_damage_1: "डिलीवरी रसीद पर हस्ताक्षर करने से पहले डिलीवरी पर अपने पैकेज का निरीक्षण करें।",
@@ -1432,7 +1542,7 @@
                 shipping_h3_international: "9. अंतर्राष्ट्रीय शिपिंग",
                 shipping_international_p1: "वर्तमान में, हम केवल भारत के भीतर ही शिपिंग करते हैं। हम अंतर्राष्ट्रीय शिपिंग सेवाएं प्रदान नहीं करते हैं।",
                 shipping_h3_special: "10. विशेष परिस्थितियों के दौरान डिलीवरी",
-                shipping_special_p1: "त्योहारों, अत्यधिक मौसम की स्थिति या स्थानीय प्रतिबंधों के दौरान, डिलीवरी का समय बढ़ाया जा सकता है। हम हमारे प्लेटफॉर्म, ईमेल या एसएमएस नोटिफिकेशन के माध्यम से किसी भी ज्ञात देरी को सूचित करेंगे। सरकार द्वारा लगाए गए लॉकडाउन या कर्फ्यू के मामले में, हम सभी लागू दिशानिर्देशों का पालन करेंगे और संपर्क रहित डिलीवरी विकल्प प्रदान कर सकते हैं।",
+                shipping_special_p1: "During festivals, extreme weather conditions, or local restrictions, delivery times may be extended. We will communicate any known delays through our platform, email, or SMS notifications. In case of government-imposed lockdowns or curfews, we will follow all applicable guidelines and may offer contactless delivery options.",
                 shipping_contact_support: "शिपिंग सहायता",
                 shipping_hours_time: "सुबह 8:00 बजे - रात 10:00 बजे, सप्ताह के 7 दिन",
                 shipping_emergency: "आपातकालीन सहायता: तत्काल डिलीवरी समस्याओं के लिए, व्यावसायिक घंटों के दौरान प्राथमिकता सहायता के लिए कॉल करें।",
@@ -1442,53 +1552,53 @@
                 refund_h3_eligibility: "1. श्रेणी के अनुसार पात्रता",
                 li_refund_elig_1: "किराना: डिलीवरी के 48 घंटे के भीतर क्षतिग्रस्त, समाप्त हो चुकी या गुम हुई वस्तुओं की रिपोर्ट करें।",
                 li_refund_elig_2: "खाद्य: डिलीवरी के 2 घंटे के भीतर गलत, खराब या गुणवत्ता की समस्याओं की रिपोर्ट करें।",
-                li_refund_elig_3: "फार्मेसी: गैर-पर्चे वाली वस्तुएं 7 दिनों के भीतर वापस की जा सकती हैं यदि वे अनओपन हों और मूल पैकेजिंग में हों।",
-                li_refund_elig_4: "सामान्य माल: डिलीवरी के 7 दिनों के भीतर वापस करने के लिए पात्र हैं यदि वे अप्रयुक्त हों और मूल स्थिति में हों।",
-                li_refund_elig_5: "इलेक्ट्रॉनिक्स और उपकरण: निर्माता वारंटी लागू होती है; रिपोर्ट defects within 10 days.",
-                li_refund_elig_6: "कृषि आपूर्ति: 15 दिनों के भीतर वापस करने के लिए पात्र हैं यदि वे अप्रयुक्त हों और मूल पैकेजिंग में हों।",
+                li_refund_elig_3: "Pharmacy: Non-prescription items may be returned within 7 days if unopened and in original packaging.",
+                li_refund_elig_4: "General Merchandise: Eligible for return within 7 days of delivery if unused and in original condition.",
+                li_refund_elig_5: "Electronics & Appliances: Manufacturer warranty applies; report defects within 10 days.",
+                li_refund_elig_6: "Farming Supplies: Eligible for return within 15 days if unused and in original packaging.",
                 refund_eligibility_p2: "निम्नलिखित वस्तुएं आमतौर पर वापस करने के लिए पात्र नहीं हैं जब तक कि वे दोषपूर्ण या गलत न हों:",
-                li_refund_inelig_1: "खराब होने वाले किराने का सामान (फल, सब्जियां, डेयरी, मांस)",
-                li_refund_inelig_2: "तैयार भोजन और भोजन",
-                li_refund_inelig_3: "व्यक्तिगत देखभाल आइटम (यदि खोले गए या उपयोग किए गए हों)",
-                li_refund_inelig_4: "पर्चे वाली दवाएं (जब तक कि वितरण त्रुटि न हो)",
-                li_refund_inelig_5: "जिन वस्तुओं को 'वापस न करने योग्य' या 'अंतिम बिक्री' के रूप में चिह्नित किया गया है",
-                li_refund_inelig_6: "अनुकूलित या व्यक्तिगत उत्पाद",
-                li_refund_inelig_7: "स्वच्छता कारणों से इनरवियर और होजरी",
+                li_refund_inelig_1: "Perishable groceries (fruits, vegetables, dairy, meat)",
+                li_refund_inelig_2: "Prepared food and meals",
+                li_refund_inelig_3: "Personal care items (if opened or used)",
+                li_refund_inelig_4: "Prescription medications (unless dispensing error)",
+                li_refund_inelig_5: "Items marked as 'non-returnable' or 'final sale'",
+                li_refund_inelig_6: "Customized or personalized products",
+                li_refund_inelig_7: "Innerwear and hosiery for hygiene reasons",
                 refund_h3_condition: "2. वापसी की शर्त",
-                refund_condition_p1: "गैर-खराब होने वाली वस्तुओं को पूर्ण धनवापसी के लिए सभी टैग, लेबल और पैकेजिंग बरकरार रखते हुए मूल, अप्रयुक्त स्थिति में वापस किया जाना चाहिए।",
-                li_refund_cond_1: "वस्तुएं अप्रयुक्त, क्षतिग्रस्त नहीं और मूल बिक्री योग्य स्थिति में होनी चाहिए।",
-                li_refund_cond_2: "सभी मूल सहायक उपकरण, मैनुअल, वारंटी कार्ड और मुफ्त उपहार शामिल होने चाहिए।",
-                li_refund_cond_3: "उचित चैनलों के माध्यम से शुरू की गई पात्र वापसी के लिए वापसी शिपिंग मुफ्त है।",
-                li_refund_cond_4: "हम उन रिटर्न को अस्वीकार करने का अधिकार सुरक्षित रखते हैं जो इन शर्तों को पूरा नहीं करते हैं या उपयोग के संकेत दिखाते हैं।",
-                li_refund_cond_5: "क्षतिग्रस्त या दोषपूर्ण वस्तुओं के लिए, साक्ष्य के रूप में तस्वीरें प्रदान की जानी चाहिए।",
+                refund_condition_p1: "Non-perishable items must be returned in original, unused condition with all tags, labels, and packaging intact for a full refund.",
+                li_refund_cond_1: "Items must be unused, undamaged, and in original saleable condition.",
+                li_refund_cond_2: "All original accessories, manuals, warranty cards, and freebies must be included.",
+                li_refund_cond_3: "Return shipping is free for eligible returns initiated through proper channels.",
+                li_refund_cond_4: "We reserve the right to reject returns that don't meet these conditions or show signs of use.",
+                li_refund_cond_5: "For damaged or defective items, photographs must be provided as evidence.",
                 refund_h3_process: "3. वापसी प्रक्रिया",
                 li_refund_proc_1: "अपने क्विक सौदा खाते के माध्यम से या ग्राहक सेवा से संपर्क करके वापसी अनुरोध शुरू करें।",
-                li_refund_proc_2: "वापसी का कारण और सहायक साक्ष्य (यदि लागू हो तो फोटो/वीडियो) प्रदान करें।",
-                li_refund_proc_3: "एक बार अनुमोदित होने के बाद, हम पिकअप शेड्यूल करेंगे (आमतौर पर 24-48 घंटों के भीतर) या वापसी निर्देश प्रदान करेंगे।",
-                li_refund_proc_4: "आपके द्वारा लौटाए गए आइटम को प्राप्त करने और निरीक्षण करने के बाद (3-5 व्यावसायिक दिनों के भीतर), हम आपकी धनवापसी संसाधित करेंगे।",
-                li_refund_proc_5: "आपको वापसी प्रक्रिया के प्रत्येक चरण पर ईमेल/एसएमएस सूचनाएं प्राप्त होंगी।",
+                li_refund_proc_2: "Provide reason for return and supporting evidence (photos/videos if applicable).",
+                li_refund_proc_3: "Once approved, we will schedule a pickup (typically within 24-48 hours) or provide return instructions.",
+                li_refund_proc_4: "After we receive and inspect the returned item (within 3-5 business days), we will process your refund.",
+                li_refund_proc_5: "You will receive email/SMS notifications at each stage of the return process.",
                 refund_h3_refund_process: "4. वापसी प्रक्रिया (Refund Process)",
-                li_refund_refund_1: "ऑनलाइन भुगतान: वापसी की स्वीकृति के 7 व्यावसायिक दिनों के भीतर धनवापसी संसाधित की जाती है।",
-                li_refund_refund_2: "सीओडी धनवापसी: 10 - 15 व्यावसायिक दिनों के भीतर बैंक खातों में संसाधित की जाती है।",
-                li_refund_refund_3: "धनवापसी खरीद के लिए उपयोग की गई मूल भुगतान विधि पर जारी की जाएगी।",
-                li_refund_refund_4: "कैश ऑन डिलीवरी ऑर्डर के लिए, आपके पंजीकृत बैंक खाते में धनवापसी संसाधित की जाएगी।",
-                li_refund_refund_5: "लेनदेन विवरण के साथ आपकी धनवापसी संसाधित होने पर आपको सूचना प्राप्त होगी।",
-                li_refund_refund_6: "बैंक प्रसंस्करण समय धनवापसी समय-सीमा में 1-3 अतिरिक्त व्यावसायिक दिन जोड़ सकता है।",
-                refund_h3_partial: "5. आंशिक वापसी (Partial Refunds)",
-                refund_partial_p1: "कुछ परिस्थितियों में, आंशिक धनवापसी दी जा सकती है:",
-                li_refund_partial_1: "यदि आपके ऑर्डर का केवल एक हिस्सा वापस या अनुपलब्ध है",
-                li_refund_partial_2: "यदि लौटाए गए आइटम उपयोग या क्षति के मामूली संकेत दिखाते हैं",
-                li_refund_partial_3: "यदि मूल पैकेजिंग गुम, क्षतिग्रस्त या अधूरी है",
-                li_refund_partial_4: "यदि मुफ्त उपहार, सहायक उपकरण या प्रचार आइटम वापस नहीं किए जाते हैं",
-                li_refund_partial_5: "यदि रीस्टॉकिंग शुल्क लागू होता है (आमतौर पर गैर-दोषपूर्ण रिटर्न के लिए 10-15%)",
-                refund_h3_late: "6. देर से या गुम हुई वापसी",
+                li_refund_refund_1: "Online Payments: Refunds processed within 7 business days of return approval.",
+                li_refund_refund_2: "COD Refunds: Processed to bank accounts within 10 – 15 business days.",
+                li_refund_refund_3: "Refunds will be issued to the original payment method used for purchase.",
+                li_refund_refund_4: "For cash on delivery orders, refunds will be processed to your registered bank account.",
+                li_refund_refund_5: "You will receive notification once your refund has been processed with transaction details.",
+                li_refund_refund_6: "Bank processing times may add 1-3 additional business days to the refund timeline.",
+                refund_h3_partial: "5. Partial Refunds",
+                refund_partial_p1: "In certain circumstances, partial refunds may be granted:",
+                li_refund_partial_1: "If only part of your order is returned or unavailable",
+                li_refund_partial_2: "If returned items show minor signs of use or damage",
+                li_refund_partial_3: "If original packaging is missing, damaged, or incomplete",
+                li_refund_partial_4: "If freebies, accessories, or promotional items are not returned",
+                li_refund_partial_5: "If restocking fees apply (typically 10-15% for non-defective returns)",
+                refund_h3_late: "6. Late or Missing Refunds",
                 refund_late_p1: "यदि आपको निर्दिष्ट समय-सीमा के भीतर अपनी धनवापसी प्राप्त नहीं हुई है:",
                 li_refund_late_1: "Check your bank account or payment method again",
                 li_refund_late_2: "Contact your credit card company as it may take some time to process",
                 li_refund_late_3: "Contact your bank as there may be processing time before the refund posts",
                 li_refund_late_4: "If you've done all of the above and still haven't received your refund, contact our support team",
                 li_refund_late_5: "We will investigate and provide status updates within 2 business days",
-                refund_h3_exchanges: "7. एक्सचेंज",
+                refund_h3_exchanges: "7. exchanges",
                 refund_exchanges_p1: "We only replace items if they are defective, damaged, or incorrect. If you need to exchange an item for the same product, contact us within the eligible timeframe to arrange an exchange. Exchanges are subject to product availability. If the replacement product is unavailable, we will issue a refund instead.",
                 refund_h3_seller_responsibility: "8. Seller Responsibility",
                 refund_seller_p1: "For marketplace items, the seller is responsible for accepting returns according to this policy. Quick Sauda will facilitate the return process between buyers and sellers and ensure compliance with our refund policy standards.",
@@ -1526,15 +1636,17 @@
                     } else {
                          el.textContent = translatedText;
                     }
-                } else if (el.tagName === 'P' || el.tagName === 'STRONG') {
-                    // Updates text content directly for paragraphs and strong tags
-                    el.textContent = translatedText;
+                } else {
+                    // Updates innerHTML to allow tags like <strong> inside translation strings
+                    el.innerHTML = translatedText;
                 }
             });
             
             // Manually update navigation links which had issues with innerHTML updates
             document.getElementById('doc-title').textContent = getText('platform_name');
             document.querySelector('.policy-nav a[href="#terms"]').textContent = getText('nav_terms');
+            document.querySelector('.policy-nav a[href="#rider-policy"]').textContent = getText('nav_rider');
+            document.querySelector('.policy-nav a[href="#driver-policy"]').textContent = getText('nav_driver');
             document.querySelector('.policy-nav a[href="#seller-agreement"]').textContent = getText('nav_seller');
             document.querySelector('.policy-nav a[href="#privacy"]').textContent = getText('nav_privacy');
             document.querySelector('.policy-nav a[href="#shipping"]').textContent = getText('nav_shipping');
