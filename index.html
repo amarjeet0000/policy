@@ -89,6 +89,22 @@
             transform: translateY(-1px);
         }
 
+        /* Print Button Style */
+        .print-btn {
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            padding: 8px 15px;
+            margin-left: 15px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .print-btn:hover {
+            background-color: #e0a800;
+        }
+
         /* === HEADINGS (Typography) === */
         h2 {
             font-size: 2em;
@@ -186,6 +202,22 @@
             text-decoration: underline;
         }
 
+        /* === PRINT OPTIMIZATION === */
+        @media print {
+            .policy-nav, .print-btn, #language-selector {
+                display: none !important;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+                padding: 0;
+            }
+            body {
+                background: #fff;
+            }
+        }
+
         /* === RESPONSIVE === */
         @media (max-width: 768px) {
             .container {
@@ -224,10 +256,14 @@
         <nav class="policy-nav">
             <div style="color: #ffc107; font-weight: bold; font-size: 1.2em;" data-key="platform_name">Quick Sauda Policies</div>
             
-            <select id="language-selector" onchange="switchLanguage(this.value)">
-                <option value="en">English</option>
-                <option value="hi">हिन्दी</option>
-            </select>
+            <div style="display: flex; align-items: center;">
+                <button class="print-btn" onclick="window.print()" data-key="btn_print">Print PDF</button>
+                <select id="language-selector" onchange="switchLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+            </div>
+
             <div class="policy-links">
                 <a href="#terms" data-key="nav_terms">Terms</a>
                 <a href="#rider-policy" data-key="nav_rider">Rider Policy</a>
@@ -405,7 +441,7 @@
 
             <div class="contact-info">
                 <h4 data-key="contact_general">Contact Us (General Inquiries)</h4>
-                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Email:</strong> amarjeet.akr1@gmail.com</p>
                 <p><strong>Phone:</strong> +91 7979952854</p>
                 <p><strong>Address:</strong> Gejan Road, Shakurabad, Jehanabad, Bihar 804425, India</p>
             </div>
@@ -578,7 +614,7 @@
 
             <div class="contact-info">
                 <h4 data-key="seller_contact_support">Seller Support</h4>
-                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Email:</strong> amarjeet.akr1@gmail.com</p>
                 <p><strong>Phone:</strong> +91 7979952854</p>
                 <p><strong data-key="business_hours_label">Business Hours:</strong> <span data-key="seller_business_hours_time">9:00 AM - 6:00 PM, Monday to Saturday</span></p>
             </div>
@@ -708,9 +744,15 @@
                 If you have any questions about this Privacy Policy or wish to exercise your data protection rights, please contact us:
             </p>
 
-            <h3 data-key="privacy_h3_background_location">13. Background Location Access</h3>
-            <p data-key="privacy_background_location_para">
-                Our app collects location data to enable real-time tracking for deliveries and ride-hailing services, even when the app is closed or not in use. This data is essential for calculating delivery times, sharing live trip progress with customers, and ensuring the safety of our partners. Users can manage or disable location permissions at any time through their device settings.
+            <h3 data-key="privacy_h3_background_location">13. Location Data & Distance Calculation</h3>
+            <p data-key="privacy_location_usage">
+                Quick Sauda collects location data to enable real-time tracking for deliveries and ride-hailing services, even when the app is closed or not in use. This data is essential for:
+                <ul>
+                    <li data-key="li_loc_1">Calculating the precise distance between the customer and seller/driver for shipping fee determination.</li>
+                    <li data-key="li_loc_2">Estimating arrival times for deliveries and rides.</li>
+                    <li data-key="li_loc_3">Sharing live trip progress with customers for safety.</li>
+                </ul>
+                Users can manage or disable location permissions at any time through their device settings.
             </p>
 
             <h3 data-key="privacy_h3_manual_deletion">14. Manual Account Deletion</h3>
@@ -720,7 +762,7 @@
 
             <div class="contact-info">
                 <h4 data-key="privacy_contact_concern">Privacy Concerns & Data Protection Officer</h4>
-                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Email:</strong> amarjeet.akr1@gmail.com</p>
                 <p><strong>Phone:</strong> +91 7979952854</p>
                 <p><strong>Address:</strong> Gejan Road, Shakurabad, Jehanabad, Bihar 804425, India</p>
                 <p><strong data-key="response_time_label">Response Time:</strong> <span data-key="privacy_response_time">We aim to respond to all privacy-related inquiries within 7 business days.</span></p>
@@ -836,7 +878,7 @@
 
             <div class="contact-info">
                 <h4 data-key="shipping_contact_support">Shipping Support</h4>
-                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Email:</strong> amarjeet.akr1@gmail.com</p>
                 <p><strong>Phone:</strong> +91 7979952854</p>
                 <p><strong data-key="hours_label">Hours:</strong> <span data-key="shipping_hours_time">8:00 AM - 10:00 PM, 7 days a week</span></p>
                 <p data-key="shipping_emergency"><strong>Emergency Support:</strong> For urgent delivery issues, call during business hours for priority assistance.</p>
@@ -952,7 +994,7 @@
 
             <div class="contact-info">
                 <h4 data-key="refund_contact_support">Refund Support</h4>
-                <p><strong>Email:</strong> amarjeet.akr2@gmail.com</p>
+                <p><strong>Email:</strong> amarjeet.akr1@gmail.com</p>
                 <p><strong>Phone:</strong> +91 7979952854</p>
                 <p><strong data-key="hours_label">Hours:</strong> <span data-key="refund_hours_time">9:00 AM - 8:00 PM, Monday to Saturday</span></p>
                 <p data-key="refund_quick_resolution"><strong>Quick Resolution:</strong> Include your order number in all communications for faster processing.</p>
@@ -976,6 +1018,7 @@
                 nav_privacy: "Privacy Policy",
                 nav_shipping: "Shipping Policy",
                 nav_refund: "Refund Policy",
+                btn_print: "Print PDF",
                 last_updated_label: "Last Updated:",
                 effective_date_label: "Effective Date:",
                 business_hours_label: "Business Hours:",
@@ -1183,8 +1226,11 @@
                 privacy_changes_para: "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date. For material changes, we will provide more prominent notice, such as email notification or in-platform alerts. You are advised to review this Privacy Policy periodically for any changes.",
                 privacy_h3_contact: "12. Contact Us",
                 privacy_contact_para: "If you have any questions about this Privacy Policy or wish to exercise your data protection rights, please contact us:",
-                privacy_h3_background_location: "13. Background Location Access",
-                privacy_background_location_para: "Our app collects location data to enable real-time tracking for deliveries and ride-hailing services, even when the app is closed or not in use. This data is essential for calculating delivery times, sharing live trip progress with customers, and ensuring the safety of our partners. Users can manage or disable location permissions at any time through their device settings.",
+                privacy_h3_background_location: "13. Location Data & Distance Calculation",
+                privacy_location_usage: "Quick Sauda collects location data to enable real-time tracking for deliveries and ride-hailing services, even when the app is closed or not in use. This data is essential for:",
+                li_loc_1: "Calculating the precise distance between the customer and seller/driver for shipping fee determination.",
+                li_loc_2: "Estimating arrival times for deliveries and rides.",
+                li_loc_3: "Sharing live trip progress with customers for safety.",
                 privacy_h3_manual_deletion: "14. Manual Account Deletion",
                 privacy_manual_deletion_para: "We provide users with the right to delete their accounts and all associated personal data at any time. You can initiate a deletion request directly through the 'Account Settings' section within the app or by contacting our support team. Upon receiving a request, your personal information, order history, and saved preferences will be permanently removed from our active servers within 30 days, unless retention is required by law.",
                 privacy_contact_concern: "Privacy Concerns & Data Protection Officer",
@@ -1309,6 +1355,7 @@
                 nav_privacy: "गोपनीयता नीति",
                 nav_shipping: "शिपिंग नीति",
                 nav_refund: "वापसी नीति",
+                btn_print: "प्रिंट PDF",
                 last_updated_label: "अंतिम अपडेट:",
                 effective_date_label: "प्रभावी तिथि:",
                 business_hours_label: "व्यावसायिक घंटे:",
@@ -1503,13 +1550,16 @@
                 privacy_h3_children: "9. बच्चों की गोपनीयता",
                 privacy_children_para_1: "हम जानबूझकर 13 वर्ष से कम आयु के व्यक्तियों से डेटा एकत्र नहीं करते हैं। यदि हमें माता-पिता की सहमति के बिना 13 वर्ष से कम उम्र के बच्चे से व्यक्तिगत डेटा एकत्र करने के बारे में पता चलता है, तो हम उस जानकारी को हमारे सर्वर से हटाने के लिए कदम उठाएंगे। माता-पिता या अभिभावक पाए जाने पर ऐसे डेटा को हटाने का अनुरोध करने के लिए हमसे संपर्क कर सकते हैं।",
                 privacy_h3_international: "10. अंतर्राष्ट्रीय डेटा ट्रांसफर",
-                privacy_international_para: "आपकी जानकारी आपके राज्य, प्रांत, देश, या अन्य सरकारी क्षेत्राधिकार के बाहर स्थित कंप्यूटरों पर स्थानांतरित और बनाए रखी जा सकती है, जहां डेटा संरक्षण कानून अलग हो सकते हैं। हमारे प्लेटफॉर्म का उपयोग करके, आप ऐसे स्थानांतरणों के लिए सहमति देते हैं। हम अंतर्राष्ट्रीय स्थानांतरणों के दौरान आपके डेटा की सुरक्षा के लिए उचित सुरक्षा उपायों को सुनिश्चित करेंगे।",
+                privacy_international_para: "आपकी जानकारी आपके राज्य, प्रांत, देश, या अन्य सरकारी क्षेत्राधिकार के बाहर स्थित कंप्यूटरों पर स्थानांतरित and बनाए रखी जा सकती है, जहां डेटा संरक्षण कानून अलग हो सकते हैं। हमारे प्लेटफॉर्म का उपयोग करके, आप ऐसे स्थानांतरणों के लिए सहमति देते हैं। हम अंतर्राष्ट्रीय स्थानांतरणों के दौरान आपके डेटा की सुरक्षा के लिए उचित सुरक्षा उपायों को सुनिश्चित करेंगे।",
                 privacy_h3_changes: "11. इस गोपनीयता नीति में परिवर्तन",
                 privacy_changes_para: "हम समय-समय पर अपनी गोपनीयता नीति को अपडेट कर सकते हैं। हम इस पृष्ठ पर नई गोपनीयता नीति पोस्ट करके और 'अंतिम अपडेट' तिथि को अपडेट करके आपको किसी भी बदलाव के लिए समय-समय पर इस गोपनीयता नीति की समीक्षा करने की सलाह दी जाती है।",
                 privacy_h3_contact: "12. हमसे संपर्क करें",
                 privacy_contact_para: "यदि आपके पास इस गोपनीयता नीति के बारे में कोई प्रश्न है या आप अपने डेटा संरक्षण अधिकारों का प्रयोग करना चाहते हैं, तो कृपया हमसे संपर्क करें:",
-                privacy_h3_background_location: "13. बैकग्राउंड लोकेशन एक्सेस",
-                privacy_background_location_para: "हमारा ऐप डिलीवरी और राइड-हेलिंग सेवाओं के लिए रियल-टाइम ट्रैकिंग सक्षम करने के लिए लोकेशन डेटा एकत्र करता है, भले ही ऐप बंद हो या उपयोग में न हो। यह डेटा डिलीवरी समय की गणना करने, ग्राहकों के साथ लाइव ट्रिप प्रगति साझा करने और हमारे भागीदारों की सुरक्षा सुनिश्चित करने के लिए आवश्यक है। उपयोगकर्ता किसी भी समय अपनी डिवाइस सेटिंग्स के माध्यम से लोकेशन अनुमति को प्रबंधित या अक्षम कर सकते हैं।",
+                privacy_h3_background_location: "13. लोकेशन डेटा और दूरी की गणना",
+                privacy_location_usage: "क्विक सौदा डिलीवरी और राइड-हेलिंग सेवाओं के लिए रीयल-टाइम ट्रैकिंग सक्षम करने के लिए स्थान डेटा एकत्र करता है, भले ही ऐप बंद हो या उपयोग में न हो। यह डेटा निम्न के लिए आवश्यक है:",
+                li_loc_1: "शिपिंग शुल्क निर्धारण के लिए ग्राहक और विक्रेता/ड्राइवर के बीच सटीक दूरी की गणना करना।",
+                li_loc_2: "डिलीवरी और राइड के आगमन समय का अनुमान लगाना।",
+                li_loc_3: "सुरक्षा के लिए ग्राहकों के साथ लाइव ट्रिप प्रगति साझा करना।",
                 privacy_h3_manual_deletion: "14. मैनुअल अकाउंट विलोपन",
                 privacy_manual_deletion_para: "हम उपयोगकर्ताओं को किसी भी समय अपना अकाउंट और उससे जुड़े सभी व्यक्तिगत डेटा को हटाने का अधिकार प्रदान करते हैं। आप सीधे ऐप के भीतर 'अकाउंट सेटिंग्स' अनुभाग के माध्यम से या हमारी सहायता टीम से संपर्क करके विलोपन अनुरोध शुरू कर सकते हैं। अनुरोध प्राप्त होने पर, आपकी व्यक्तिगत जानकारी, ऑर्डर इतिहास और सहेजी गई प्राथमिकताएं 30 दिनों के भीतर हमारे सक्रिय सर्वर से स्थायी रूप से हटा दी जाएंगी, जब तक कि कानून द्वारा प्रतिधारण की आवश्यकता न हो।",
                 privacy_contact_concern: "गोपनीयता चिंताएँ और डेटा संरक्षण अधिकारी",
